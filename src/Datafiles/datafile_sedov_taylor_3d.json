@@ -1,0 +1,181 @@
+{
+    "Hel": {
+        "A": 1.0, 
+        "Z_2": 1.0, 
+        "gamma_gas": 1.667, 
+        "rho_0": 1.0, 
+	"sie_0": 1E-3,
+        "Z": 1.0, 
+        "eos_type": "ideal"
+    },
+    "Air": {
+        "A": 1.0, 
+        "Z_2": 1.0, 
+        "gamma_gas": 1.667, 
+        "rho_0": 1.0, 
+	"sie_0": 5.0277E3,
+        "Z": 1.0, 
+        "eos_type": "ideal"
+    }, 
+    "switches": {
+        "sw_symmetry": 0, 
+        "sw_vert_mass": 1, 
+        "sw_nraz": 1,
+        "sw_wilkins": 0
+    },
+    "cell_set": {
+        "mesh_type": "x_y", 
+        "boundary_conditions": [
+            2, 
+            2, 
+            2, 
+            2,
+            2,
+            2
+        ]
+    }, 
+    "contours": {
+        "contours_j": [
+            {
+                "units": "regular", 
+                "theta0": 0.0
+            },
+            {
+                "units": "regular", 
+                "theta0": 0.025
+            }, 
+            {
+                "units": "regular", 
+                "theta0": 1.125
+            }
+        ],
+        "contours_k": [
+            {
+                "units": "regular",
+                "phi0": 0.0
+            },
+            {
+                "units": "regular",
+                "phi0": 0.025
+            },
+            {
+                "units": "regular",
+                "phi0": 1.125
+            }
+        ],
+        "contours_i": [
+            {
+                "y1": -10, 
+                "x1": 0, 
+                "y2": 10.0,
+                "x2": 0, 
+                "contour_type": "line"
+            }, 
+            {
+                "y1": -10, 
+                "x1": 0.025, 
+                "y2": 10.0, 
+                "x2": 0.025, 
+                "contour_type": "line"
+            },
+            {
+                "y1": -10, 
+                "x1": 1.125, 
+                "y2": 10.0, 
+                "x2": 1.125, 
+                "contour_type": "line"
+            }
+        ]
+    }, 
+    "zone": {
+        "zone_i": [
+            {
+                "type": "constant", 
+                "dr": 1.0
+            }, 
+            {
+                "type": "constant", 
+                "dr": 1.0
+            }
+        ], 
+        "zone_j": [
+            {
+                "d_theta": 1.0, 
+                "type": "constant"
+            },
+            {
+                "d_theta": 1.0, 
+                "type": "constant"
+            }
+        ],
+        "zone_k": [
+            {
+                "d_phi": 1.0,
+                "type": "constant"
+            },
+            {
+                "d_phi": 1.0,
+                "type": "constant"
+            }
+        ]
+    }, 
+    "diagnostics": {
+        "number_diagnostics": 1,
+        "group": [
+            {
+                "condition": 1,
+                "diagnostic": [  
+                    {
+                        "type": "silo",
+                        "variables": ["velocity_x", "velocity_y","position_x", "position_y", "position_z", "pressure", "density", "SIE", "time", "index"]
+                    }
+                ]
+            }
+        ]
+    },
+    "layers_materials": {
+    	"number_layers_j": 2,
+        "number_cells_j": [
+            1,
+            70
+        ], 
+        "number_layers_i": 2, 
+        "number_cells_i": [
+            1,
+            70
+        ],
+        "number_layers_k":2,
+        "number_cells_k": [
+            1,
+            70
+        ],
+        "materials": [
+            "Air", 
+            "Hel", 
+            "Hel",
+            "Hel",
+            "Hel",
+            "Hel"
+        ]
+    }, 
+    "data": {
+        "nyb": 3, 
+        "name": "sod_3d", 
+        "nxb": 102,
+	    "nzb": 102
+    }, 
+    "simulation_parameters": {
+        "time_final": 2e-3, 
+        "init_temperature": 300, 
+        "dt0": 1e-14, 
+        "dt_factor": 0.1, 
+        "cyl": 1, 
+        "dt_max": 0.1,
+        "linear_visc_fac": 0.2,
+        "quad_visc_fac": 1,
+        "dt_cour_fac": 3
+    },
+    "rezone_advect":{
+        "rezone_type": "lagrange"
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "Be": {
+        "A": 4.0, 
+        "index": 1, 
+        "Z_2": 4.0, 
+        "gamma_gas": 1.667, 
+        "rho_0": 1.0, 
+        "Z": 2.0, 
+        "eos_type": "ideal"
+    }, 
+    "cell_set": {
+        "mesh_type": "x_y", 
+        "boundary_conditions": [
+            2, 
+            2, 
+            2, 
+            2
+        ]
+    }, 
+    "Al": {
+        "A": 4.0, 
+        "index": 2, 
+        "Z_2": 4.0, 
+        "gamma_gas": 1.667, 
+        "rho_0": 2.0, 
+        "Z": 2.0, 
+        "eos_type": "ideal"
+    }, 
+    "switches": {
+        "sw_symmetry": 0, 
+	"cyl": 0,
+        "sw_vert_mass": 1, 
+        "sw_nraz": 1
+    }, 
+    "contours": {
+        "contours_j": [
+            {
+                "units": "regular", 
+                "theta0": 0.0
+            }, 
+            {
+                "units": "regular", 
+                "theta0": 0.5
+            }, 
+            {
+                "units": "regular", 
+                "theta0": 1.0
+            }
+        ], 
+        "contours_i": [
+            {
+                "y1": -1, 
+                "x2": 0, 
+                "x1": 0, 
+                "y2": 2, 
+                "contour_type": "line"
+            }, 
+            {
+                "y1": -1, 
+                "x2": 0.5, 
+                "x1": 0.5, 
+                "y2": 2, 
+                "contour_type": "line"
+            }, 
+            {
+                "y1": -1, 
+                "x2": 1, 
+                "x1": 1, 
+                "y2": 2, 
+                "contour_type": "line"
+            }
+        ]
+    }, 
+    "zone": {
+        "zone_i": [
+            {
+                "type": "constant", 
+                "dr": 0.0
+            }, 
+            {
+                "type": "constant", 
+                "dr": 0.0
+            }
+        ], 
+        "zone_j": [
+            {
+                "d_theta": 0.0, 
+                "type": "constant"
+            },
+            {
+                "d_theta": 0.0, 
+                "type": "constant"
+            }
+        ]
+    }, 
+ "diagnostics": {
+        "number_diagnostics": 1,
+        "group": [
+            {
+                "condition": 1,
+                "diagnostic": [  
+                    {
+                        "type": "text",
+                        "variables": ["velocity_x", "velocity_y","position_x", "position_y", "position_z", "pressure", "density", "SIE", "time", "index"]
+                    }
+                ]
+            }
+        ]
+    },
+    "layers_materials": {
+    	"number_layers_j": 2,
+        "number_cells_j": [
+            20,
+            20
+        ], 
+        "number_layers_i": 2, 
+        "number_cells_i": [
+            20, 
+            20
+        ], 
+        "materials": [
+            "Be", 
+            "Al",
+            "Al", 
+            "Be"
+        ]
+    }, 
+    "data": {
+        "nyb": 102, 
+        "name": "sod_2d", 
+        "nxb": 102
+    }, 
+    "simulation_parameters": {
+        "time_final": 0.3, 
+	"cyl": 0,
+        "init_temperature": 3.22e-08, 
+        "dt": 1e-14, 
+        "dt_max": 0.1
+    },
+    "rezone_advect": {
+        "rezone_type": 0
+    }
+}
