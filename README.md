@@ -1,6 +1,5 @@
 # ScalSALE: Scalable SALE Benchmark Framework for Supercomputers
 
-For the datafiles for scaling (lagrange/euler and weak/strong) please refer to https://drive.google.com/file/d/1NXgf8GsVuGG-3ZO87vrbQgpyJ8QRM5Sr/view?usp=sharing
 ## Prerequisits
 
 This code was tested with:
