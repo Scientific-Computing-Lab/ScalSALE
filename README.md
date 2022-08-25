@@ -1,5 +1,4 @@
-# ScalSALE: A Scalable Framework for Scientific Code in Modern Fortran and MPI-3
-This repository contains the code that originates for the idea presented [https://arxiv.org/abs/1910.06415].
+# ScalSALE: Scalable SALE Benchmark Framework for Supercomputers
 
 For the datafiles for scaling (lagrange/euler and weak/strong) please refer to https://drive.google.com/file/d/1NXgf8GsVuGG-3ZO87vrbQgpyJ8QRM5Sr/view?usp=sharing
 ## Prerequisits
