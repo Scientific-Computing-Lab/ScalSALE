@@ -1,0 +1,29 @@
+#!/bin/bash
+module purge
+module load cmake/X.XX.2 eclipse/2018 gcc/9.1.0 intel/2017 scr/1.2.0-openmpi-1.10.4-intel-2017 mpi/openmpi-1.10.4-intel-2017 pFUnit/3.2.9-openmpi-1.10.4-intel-2017 hdf5/1.8.9-openmpi-1.10.4-intel-2017 silo/4.8-openmpi-1.10.4-intel-2017
+module load anaconda/2.5.0
+source activate backus-openmpi-1.10.4-intel-2017
+
+SCR_LIB_FLAGS="-lscrf -L${SCR_PATH}/scr/lib64 -lscr"
+SCR_INCLUDE_FLAGS="-I${SCR_PATH}/scr/include -I/usr/include -I."
+rm -rf ../../build
+mkdir ../../build
+cd ../../build
+if test "$1" = tests
+then 
+  echo "@@@@ TEST MODE @@@@"
+  FC=mpif90 DEFS="-DTEST" cmake ../src/
+elif test "$1" = debug
+then
+  echo "@@@@ DEBUG MODE @@@@"
+  FC=mpif90 DEFS="-DDEBUG" cmake ../src/
+else
+  FC=mpif90 cmake ../src/
+fi
+make
+cd ../src/Scripts
+rm core* 2>/dev/null
+rm *.so 2>/dev/null
+f2py --fcompiler=intelem --f90exec=mpif90  -c -I../../build/modules -m datafile_fortran ../../build/General/CMakeFiles/General.dir/*.o ../../build/Mesh/CMakeFiles/Mesh.dir/*.o ../../build/Main/CMakeFiles/Main.dir/*.o ../../build/Quantities/Cell/CMakeFiles/Q_Cell.dir/*.o ../../build/Quantities/Vertex/CMakeFiles/Q_Vertex.dir/*.o ../../build/Quantities/CMakeFiles/Quantities.dir/*.o ../../build/Material/Equation_of_state/CMakeFiles/EOS.dir/*.o  ../../build/Rezone_and_Advect/CMakeFiles/Rezone_and_Advect.dir/*.o  ../../build/archive/lib*  ../Main/datafile_interface.f90 ../../build/Diagnostics/CMakeFiles/Silo.dir/*.o ../../build/Diagnostics/CMakeFiles/Diagnostics.dir/*.o ../../build/CR/CMakeFiles/CR.dir/*.o ../../build/Parallel/CMakeFiles/Parallel.dir/*.o -L${SILO_PATH}/lib -lsiloh5 -L${MPI_PATH}/lib -lmpi -lmpi_cxx -L${HDF5_PATH}/lib -lhdf5_fortran -lhdf5 -lz  -lstdc++ ${SCR_LIB_FLAGS} ${SCR_INCLUDE_FLAGS} 2>/dev/null
+#f2py -c -I../../build/modules -m datafile_fortran ../../build/General/CMakeFiles/General.dir/*.o ../../build/Mesh/CMakeFiles/Mesh.dir/*.o ../../build/Main/CMakeFiles/Main.dir/*.o ../../build/Quantities/Cell/CMakeFiles/Q_Cell.dir/*.o ../../build/Quantities/Vertex/CMakeFiles/Q_Vertex.dir/*.o ../../build/Quantities/CMakeFiles/Quantities.dir/*.o ../../build/Material/Equation_of_state/CMakeFiles/EOS.dir/*.o  ../../build/Rezone_and_Advect/CMakeFiles/Rezone_and_Advect.dir/*.o  ../../build/archive/lib*  ../Main/datafile_interface.f90 ../../build/Diagnostics/CMakeFiles/Silo.dir/*.o ../../build/Diagnostics/CMakeFiles/Diagnostics.dir/*.o ../../build/CR/CMakeFiles/CR.dir/*.o -L${SILO_PATH}/lib -lsiloh5 -L${MPI_PATH}/lib -lmpi -lmpi_f90 -lmpi_cxx -L${HDF5_PATH}/lib -lhdf5_fortran -lhdf5 -lz -lstdc++ ${SCR_LIB_FLAGS} ${SCR_INCLUDE_FLAGS} 2>/dev/null
+mv *.so ../Main

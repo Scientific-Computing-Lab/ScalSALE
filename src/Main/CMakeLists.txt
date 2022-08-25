@@ -1,0 +1,23 @@
+#add_executable(main main.f90)
+#target_link_libraries(main Input_file General Diagnostics Calculations Problem Mesh BC_Vertex BC_Cell Equation_of_state Quantities Q_Vertex Q_Cell)
+#target_link_libraries(main Input_file Calculations Problem Mesh BC_Vertex BC_Cell Equation_of_state Q_Vertex Q_Cell Quantities General)
+#target_link_libraries(main General Mesh )
+#include_directories($ENV{HDF5_PATH}/include $ENV{MPI_PATH}/include $ENV{JSON_FORTRAN_PATH} $ENV{SILO_PATH}/include $ENV{SCR_PATH}/scr/include)
+message($ENV{JSONFORTRAN})
+include_directories($ENV{MPI_PATH}/include $ENV{JSONFORTRAN} $ENV{SILO_PATH}/include )
+#link_directories($ENV{HDF5_PATH}/lib $ENV{MPI_PATH}/lib $ENV{JSON_FORTRAN_PATH}/lib $ENV{SILO_PATH}/lib $ENV{SCR_PATH}/scr/lib64)
+link_directories($ENV{MPI_PATH}/lib $ENV{JSONFORTRAN}/lib $ENV{SILO_PATH}/lib )
+
+add_library(Main problem.f90)
+target_link_libraries(Main mpi z )#silo)
+add_executable(main main.f90)
+#target_link_libraries(main Diagnostics General)
+#target_link_libraries(main Main Diagnostics Mesh Time_step Rezone_and_Advect Input Parallel General BC Quantities BC_Cell BC_Vertex Q_Vertex Q_Cell Material EOS)
+target_link_libraries(main Main Diagnostics Mesh Time_step Rezone_and_Advect Input Parallel General  Quantities Q_Vertex Q_Cell BC BC_Cell BC_Vertex Material EOS)
+
+#target_link_libraries(main Main Diagnostics Input General Parallel BC BC_Cell BC_Vertex Material Time_step Rezone_and_Advect Mesh Quantities BC_Cell Q_Vertex BC_Vertex Q_Cell Material EOS)
+
+#include_directories($ENV{HDF5_PATH}/include)
+#link_directories($ENV{HDF5_PATH}/lib)
+#add_library(Main problem.f90)
+#target_link_libraries(Main hdf5 z)

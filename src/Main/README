@@ -1,0 +1,39 @@
+To compile with F2py
+
+If there is no datafile_object.o/.mod or want to update it:
+1. gfortran -c -fPIC datafile_object.f90
+
+2. gfortran -c -fPIC datafile_interface.f90
+path of datafile_object.o needs to be with datafile interface or just link it ...
+
+3. f2py -c -I. -m datafile_fortran datafile_object.o datafile_interface.f90
+
+~~~ IN CURRENT VERSION, FIRST COMPILE VIA ECLIPSE INSTEAD OF 1~3 :
+
+your pwd needs to be in /Input_file
+4. rm *.so;f2py -c -I../../build/modules -m datafile_fortran ../../build/General/CMakeFiles/General.dir/*.o ../../build/Mesh/CMakeFiles/Mesh.dir/*.o datafile_interface.f90
+5. to run you need python main.py
+
+FOR MATAN AFTER PROBLEM COMPILED:
+If you want to run throught problem aka for matan pwd should be /input_file..
+4. rm *.so;f2py -c -I../../build/modules -m datafile_fortran ../../build/General/CMakeFiles/General.dir/*.o ../../build/Problem/CMakeFiles/Problem.dir/*.o datafile_interface.f90
+5. python main.py
+
+
+
+
+rm *.so;f2py -c -I../../build/modules -m datafile_fortran ../../build/General/CMakeFiles/General.dir/*.o ../../build/Mesh/CMakeFiles/Mesh.dir/*.o ../../build/Problem/CMakeFiles/Problem.dir/*.o ../../build/Quantities/Cell/CMakeFiles/Q_Cell.dir/*.o ../../build/Equation_of_state/CMakeFiles/Equation_of_state.dir/*.o ../../build/Quantities/CMakeFiles/Quantities.dir/*.o ../../build/archive/lib*  datafile_interface.f90; python main.py 
+
+
+
+
+
+
+
+
+HOW TO GDB:
+after everything is compiled run:
+gdb python
+run main.py
+
+AFTER THESE TWO YOU WILL GET THE LIBRARY AND MODULES LOAD AND IT WILL AUTOCOMPLETE YOU 
