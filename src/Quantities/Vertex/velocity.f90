@@ -229,7 +229,7 @@ contains
                     ip = i + 1
                     jp = j + 1
                     kp = k + 1
-                    if (vof(i,j,k) > emf) cycle
+                    if (vof(i,j,k) < emf) cycle
 
                     x1 = x(i, j, k)
                     x2 = x(ip, j, k)
