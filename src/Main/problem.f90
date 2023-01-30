@@ -695,9 +695,9 @@ contains
                         !call this%Write_to_files()
         ncyc = 1
         if (this%rezone_type == 0) then
-            max_ncyc = 21
+            max_ncyc = 11
         else
-            max_ncyc = 201
+            max_ncyc = 11
         end if
 
         if (this%mesh%dimension == 2) then
@@ -721,7 +721,24 @@ contains
             end do
         end if
 
+        !print some cell quantities at the end of the calculation to help you debug your code.
+        !you should expect the same result for each correct execution you make. 
+        !we print the values in a stride of 10 in each axis to save on storage and I/O operations.
+        !these values should indicate whether your code is correct or not.
+        
 
+        open (unit=411, file='total_pressure_result.txt', status = 'replace')  
+        write(411,*) this%total_pressure%data(1)%values(1:this%nx:10, 1:this%ny:10, 1:this%nz:10) 
+        close (411)
+        open (unit=412, file='velocity_result.txt', status = 'replace')  
+        write(412,*) this%velocity%data(1)%values(1:this%nx:10, 1:this%ny:10, 1:this%nz:10) 
+        close (412)
+        open (unit=413, file='total_cell_mass_result.txt', status = 'replace')  
+        write(413,*) this%total_cell_mass%data(1)%values(1:this%nx:10, 1:this%ny:10, 1:this%nz:10) 
+        close (413)
+        open (unit=414, file='total_sie_result.txt', status = 'replace')  
+        write(414,*) this%total_sie%data(1)%values(1:this%nx:10, 1:this%ny:10, 1:this%nz:10) 
+        close (414)
 
         call this%Close_files()
         if (this%parallel_params%my_rank == 0) then
