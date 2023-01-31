@@ -717,6 +717,7 @@ contains
                 !  call this%Write_to_files()
                 counter = counter + 1
                 ncyc = ncyc + 1
+                write(*,*) "Cycle time: ", omp_get_wtime()-reem_start
             !      call this%cr%Checkpoint(ckpt_name)
             end do
         end if
