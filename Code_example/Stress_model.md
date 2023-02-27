@@ -1,6 +1,19 @@
 # Stress model addition to ScalSALE
 Physical attributes such as stress play an important role in describing the motion of solids in hydrodynamic codes. As a case study, the following workflow describes how the stress module can be easily added to ScalSALE. Thus, expanding the code and demonstrating the idea of bridging the gap between benchmarks and the physical application.
 
+In order to add new physical model to ScalSALE a class of the new physical model class need to be created. This class will contain all the relevant quantities and calculations for the new model. The stress model class can be seen below:
+
+```fortran
+type :: stress_model
+  type(shear_modulus_t) , pointer :: shear
+  type(stress_yield_t)  , pointer :: yield
+  type(stress_tensor_t) , pointer :: stress_tensor
+  contains
+    procedure :: Calculate_stress
+    procedure :: Update_acceleration
+end type stress_model
+```
+
 ## Prerequisits
 
 This code was tested with:
