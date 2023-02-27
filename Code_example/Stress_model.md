@@ -13,7 +13,7 @@ type :: stress_model
     procedure :: Update_acceleration
 end type stress_model
 ```
-The class described the new physical stress module. It contains two main functions, a function that calculates the stress in the current time step and a function that update the acceleration values using the updated stress tensor.
+| *This class described the new physical stress module. It contains two main functions, a function that calculates the stress in the current time step and a function that update the acceleration values using the updated stress tensor.* |
 ## Prerequisits
 
 This code was tested with:
