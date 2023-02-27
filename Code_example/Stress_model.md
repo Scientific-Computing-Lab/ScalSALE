@@ -1,4 +1,4 @@
-# ScalSALE: Scalable SALE Benchmark Framework for Supercomputers
+# Stress model addition to ScalSALE
 
 ## Prerequisits
 
