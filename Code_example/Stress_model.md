@@ -1,5 +1,5 @@
 # Stress model addition to ScalSALE
-Physical attributes such as stress play an important role in describing the motion of solids in hydrodynamic codes.
+Physical attributes such as stress play an important role in describing the motion of solids in hydrodynamic codes. As a case study, the following workflow describes how the stress module can be easily added to ScalSALE. Thus, expanding the code and demonstrating the idea of bridging the gap between benchmarks and the physical application.
 
 ## Prerequisits
 
