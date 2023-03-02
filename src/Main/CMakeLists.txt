@@ -13,7 +13,7 @@ target_link_libraries(Main mpi z )#silo)
 add_executable(main main.f90)
 #target_link_libraries(main Diagnostics General)
 #target_link_libraries(main Main Diagnostics Mesh Time_step Rezone_and_Advect Input Parallel General BC Quantities BC_Cell BC_Vertex Q_Vertex Q_Cell Material EOS)
-target_link_libraries(main Main Diagnostics Mesh Time_step Rezone_and_Advect Input Parallel General  Quantities Q_Vertex Q_Cell BC BC_Cell BC_Vertex Material EOS)
+target_link_libraries(main Main Diagnostics Mesh Time_step Rezone_and_Advect Input Parallel Quantities Q_Vertex Q_Cell BC BC_Cell BC_Vertex Material EOS General)
 
 #target_link_libraries(main Main Diagnostics Input General Parallel BC BC_Cell BC_Vertex Material Time_step Rezone_and_Advect Mesh Quantities BC_Cell Q_Vertex BC_Vertex Q_Cell Material EOS)
 
