@@ -95,9 +95,9 @@ The datafile is written as a json file (parsed via the json-fortran module expla
 
 For the general case, expanding new options, or exploring existing ones can be found in the files datafile_object.f90, replace_words.f90 and defaults.f90 in the folder src/Input. Expanding the datafile can be simply done by following the same coding pattern - adding a default value if needed and allowing words instead of integers and finally parsing them and adding them to the datafile_object.f90 object (that will be passed to src/Main/problem.f90 which builds the classes and physical modules). 
 
-<details><summary>Materials</summary>
-
 The following segment will describe the datafile in pieces.
+
+<details><summary>Materials</summary>
 
 1. Materials - Each material is defined by a name, its EoS (currently only ideal gas is allowed) and other properties such as density, initial energy etc:
 ```json
@@ -113,6 +113,9 @@ The following segment will describe the datafile in pieces.
     } 
 ```
 </details>
+
+<details><summary>Layers</summary>
+
 2. The layers of the materials - to define the mesh, you first need to define the layers and materials that fill that mesh. It also defines number of cells in each layer. Of course, for the 3d case you should add "number_layers_k"! The following json creates 4 layers, 20x20 cells in each layer - (in case it is an xy mesh, imagine it is a box split into four right in the middle and from left to right then bottom to up it goes material1, material2, material2 and material1.
 ```json
  "layers_materials": {
@@ -134,6 +137,9 @@ The following segment will describe the datafile in pieces.
         ]
     }, 
 ```
+</details>
+
+<details><summary>Boundary Condition</summary>
 
 3. Boundary condition & Mesh type - Every phyiscal problems requires boundary conditions and defenition of which mesh_type. Currently, it supports 3 different meshes: 2d xy, 3d xyz and 3d pyramid. To add a new mesh, simply expand the src/Mesh/mesh_2d or src/Mesh/mesh_3d to build a new way for the X,Y,Z coordinates. the values are integers, which are explained in src/Main/problem. 
 ```json
@@ -147,6 +153,10 @@ The following segment will describe the datafile in pieces.
         ]
     }, 
 ```
+	
+</details>
+	
+<details><summary>Contours</summary>
 
 4. Contours - Between each two layers (and the different axis) a contour must be defined for the maximal value, and minimal value of the coordinates. We allow multiple ways to define the contours for example an elipse or a simple straight line. Usually, the j and the k contours are defined as the angles. For a more general case of building a mesh, please edit the code such that the contours_j and contours_k can support such a case. Please note that the symmetry axis is I, therefore usually you will want to define a simple box by giving I the boundaries of the box and the J as a "dummy angle argument" such as follows: this will create a box, specifically 4 boxes with 4 different layers: the first layer is bounded from (0,0) to (0.5,0) , the second layer (0.5,0) to (1,0), the third layer from (0.5,0) to (0.5,0.5) and the last layer from (0.5,0.5) to (1,1). 
 
@@ -191,6 +201,7 @@ The following segment will describe the datafile in pieces.
         ]
     }, 
 ```
+</details>
 
 5. Zones - After defining the contour, sometimes the user will want to give each cell a different size, thie is defined in the zone segement. Whereas, constant defines each cell to be in the same size (dr and d_theta are for other types of zones, such a geometry series etc...)
 ```json
