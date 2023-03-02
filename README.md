@@ -203,6 +203,8 @@ The following segment will describe the datafile in pieces.
 ```
 </details>
 
+<details><summary>Zones</summary>
+
 5. Zones - After defining the contour, sometimes the user will want to give each cell a different size, thie is defined in the zone segement. Whereas, constant defines each cell to be in the same size (dr and d_theta are for other types of zones, such a geometry series etc...)
 ```json
  "zone": {
@@ -228,6 +230,9 @@ The following segment will describe the datafile in pieces.
         ]
     }, 
 ```
+</details>
+
+<details><summary>Simulation Parameters</summary>
 
 6. Simulation parameters - to change the parameters of the simulation such as final time, and other predefined constants, alter this segment:
 ```json
@@ -240,13 +245,18 @@ The following segment will describe the datafile in pieces.
     },
 ```
 
+</details>
+
+<details><summary>Rezone Type</summary>
+
 7. Rezone type - currently only Lagrange and Euler rezoneing are allowed. 0 for lagrange 1 for euler 
 ```json
 "rezone_advect": {
         "rezone_type": 0
     }
 ```
-
+</details>
+	
 For more examples please refer to the different datafiles in src/Datafiles. 
 
 ## Sedov-Taylor
