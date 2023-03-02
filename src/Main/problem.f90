@@ -656,7 +656,7 @@ contains
         use omp_lib
         use general_utils_module, only : int2str
         class (problem_t) , intent(in out) :: this 
-        real(8) :: reem_start, reem_total
+        real(8) :: start, finish
         integer :: ierr
         !character(len=size(this%cr%run_name)+size(this%name)+2)  :: ckpt_name
         integer :: np
@@ -691,7 +691,7 @@ contains
 
         !call this%cr%Restart(ckpt_name)
 
-        reem_total = omp_get_wtime()
+        finish = omp_get_wtime()
                         !call this%Write_to_files()
         ncyc = 1
         if (this%rezone_type == 0) then
@@ -711,13 +711,13 @@ contains
 
         else if (this%mesh%dimension == 3) then
             do while (this%time%Should_continue() .and. ncyc < max_ncyc)
-                reem_start = omp_get_wtime()
+                start = omp_get_wtime()
                 call this%hydro%do_time_step_3d(this%time)
                 call this%time%Update_time()
                 !  call this%Write_to_files()
                 counter = counter + 1
                 ncyc = ncyc + 1
-                write(*,*) "Cycle time: ", omp_get_wtime()-reem_start
+                write(*,*) "Cycle time: ", omp_get_wtime()-start
             !      call this%cr%Checkpoint(ckpt_name)
             end do
         end if
@@ -750,9 +750,9 @@ contains
 !            open (71, status = 'replace', file = trim(tmp2(:len(trim(tmp2)) -4 ) // "_" &
 !                // trim(tmp) // ".txt"))
             open (71, status = 'replace', file = "runtime_" // trim(int2str(this%global_nx)) // "_" // trim(int2str(this%num_proc)) // ".txt")
-            write(71,*) "Total Time:", omp_get_wtime() - reem_total
+            write(71,*) "Total Time:", omp_get_wtime() - finish
         end if
-        write(*,*) "Total Time:", omp_get_wtime() - reem_total
+        write(*,*) "Total Time:", omp_get_wtime() - finish
         write(*,*) "ncyc: ", ncyc-1
     end subroutine Start_calculation
 
