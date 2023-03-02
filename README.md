@@ -1,5 +1,7 @@
 # [ScalSALE: Scalable SALE Benchmark Framework for Supercomputers](https://devmesh.intel.com/projects/scalsale)
 
+
+ScalSALE is a 2D/3D multi-physics framework for benchmarking supercomputers. It is based on the well-known SALE scheme and is capable on simulating with Lagrangian and Eulerian rezoning.
 ## Prerequisits
 
 This code was tested with:
