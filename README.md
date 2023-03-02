@@ -61,7 +61,9 @@ Once the makefiles are created, you can simple compile the project with `./make.
 </details>
 
 ## Execution
-### Execute Locally
+
+<details><summary>Execute Locally</summary>
+
 To run the code simply execute the bash script `./run.sh` located in `src/Scripts` directory.\
 The script executes the following mpirun command:
 ```
@@ -70,6 +72,9 @@ mpirun -n np ../exec/main
 Where `np` is the number of mpi processes that are being used.\
 In order to run ScalSALE the number of processes in the executation command needs to be similar to the number of processes in the datafile.\
 So if you change the number of processes in the datafile **you need to update the number of processes in `run.sh` accordingly**.
+</details>
+
+<details><summary>Execute On a Cluster</summary>
 
 #### Execute on a Cluster
 To run the code using slurm execute the python script `slurm_run.py` located in `src/Scripts` directory.\
@@ -83,11 +88,14 @@ In addition, you need to change the module load on the job request to the module
 ```
 module load intel/18.0.1.163 openmpi/4.0.4_intel mpi/impi-intel2018 cmake anaconda2
 ```
+</details>
 
 ## Datafile
 The datafile is written as a json file (parsed via the json-fortran module explained above -- it is possible to write a new parser as long as it knows how to read a json file). The main objective of the datafile is to be parsed by the src/Input/datafile_object.f90 module which reads and parses the datafile in order to properly define the execution. 
 
 For the general case, expanding new options, or exploring existing ones can be found in the files datafile_object.f90, replace_words.f90 and defaults.f90 in the folder src/Input. Expanding the datafile can be simply done by following the same coding pattern - adding a default value if needed and allowing words instead of integers and finally parsing them and adding them to the datafile_object.f90 object (that will be passed to src/Main/problem.f90 which builds the classes and physical modules). 
+
+<details><summary>Materials</summary>
 
 The following segment will describe the datafile in pieces.
 
@@ -104,6 +112,7 @@ The following segment will describe the datafile in pieces.
         "eos_type": "ideal" # type of EoS, can see in src/Input/replace_words.f90 for more options
     } 
 ```
+</details>
 2. The layers of the materials - to define the mesh, you first need to define the layers and materials that fill that mesh. It also defines number of cells in each layer. Of course, for the 3d case you should add "number_layers_k"! The following json creates 4 layers, 20x20 cells in each layer - (in case it is an xy mesh, imagine it is a box split into four right in the middle and from left to right then bottom to up it goes material1, material2, material2 and material1.
 ```json
  "layers_materials": {
