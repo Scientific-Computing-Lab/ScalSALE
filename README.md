@@ -1,3 +1,6 @@
+<img src="https://github.com/Scientific-Computing-Lab-NRCN/ScalSALE/blob/main/Images/scalesale.jpeg" width="300" height="300">
+![](Packages/com.alelievr.mixture/Documentation~/Images/Mixture-github.png)
+
 # [ScalSALE: Scalable SALE Benchmark Framework for Supercomputers](https://devmesh.intel.com/projects/scalsale)
 
 
