@@ -279,7 +279,11 @@ The following segment will describe the datafile in pieces.
 	
 For more examples please refer to the different datafiles in src/Datafiles. 
 
-## 6. Sedov-Taylor
+## 6. Compile and Run on Intel DevCloud Video
+
+[![Watch the video](https://imgtr.ee/images/2023/03/02/RzxFD.png)](https://youtu.be/_Coyc3QM-nc) 
+
+## 7. Sedov-Taylor
 
 #### Sedov-Taylor run example
 For example this is the initial state of the problem (3D, 15^3 cells)
@@ -294,4 +298,4 @@ Lagrangian mesh: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 <img align="left" src="https://github.com/Scientific-Computing-Lab-NRCN/ScalSALE/blob/main/Images/visit0007.png" width="300" height="300">
 <img align="right" src="https://github.com/Scientific-Computing-Lab-NRCN/ScalSALE/blob/main/Images/visit0006.png" width="300" height="300">
 
-[![Watch the video](https://youtu.be/_Coyc3QM-nc](https://youtu.be/_Coyc3QM-nc)
+
