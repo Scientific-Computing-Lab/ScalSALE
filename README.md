@@ -293,3 +293,5 @@ Lagrangian mesh: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
 <img align="left" src="https://github.com/Scientific-Computing-Lab-NRCN/ScalSALE/blob/main/Images/visit0007.png" width="300" height="300">
 <img align="right" src="https://github.com/Scientific-Computing-Lab-NRCN/ScalSALE/blob/main/Images/visit0006.png" width="300" height="300">
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/_Coyc3QM-nc)
