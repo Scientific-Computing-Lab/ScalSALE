@@ -3,16 +3,19 @@
 
 ScalSALE is a 2D/3D multi-physics framework for benchmarking supercomputers. It is based on the well-known SALE scheme and is capable on simulating with Lagrangian and Eulerian rezoning.
 ## Prerequisits
+<details><summary>Prerequisits</summary>
 
 This code was tested with:
 1. intel/2017 or intel/2018 and OneAPI 2021
 2. OpenMPI 1.10.4, 4.0.4, 4.1.3 - any OpenMPI that supports MPI3+ standard.
 3. json-fortran https://github.com/jacobwilliams/json-fortran compiled with the same intel.
 4. cmake 3.15 or higher
-
+</details>
 ## Folders Documentation
-<details><summary>Instructions</summary>
+
 The src folder contains the source code files of ScalSALE, here is a short documentation of its subfolders.
+
+<details><summary>Folders</summary>
 
 |Folder                    |Documentation                                                                   |
 |:---:                     |:---                                                                            |
@@ -30,10 +33,13 @@ The src folder contains the source code files of ScalSALE, here is a short docum
 |**Scripts**               |Contains the Scripts code files                                                 |
 |**Time_step**             |Contains the hydrodynamic time step implementation                              |
 |**exec**                  |Contains the executable file, created after compilation                         |
+</details>
 
 
 ## Compile & Install
 This project is built via cmake. In order to create the makefiles and the executable you need to run the following commands from the ScalSALE main directory:
+<details><summary>Instructions</summary>
+
 ```
 mkdir build
 cd build
@@ -51,7 +57,7 @@ src/exec/main
 Once the makefiles are created, you can simple compile the project with `./make.sh` bash script, located in `src/Scripts` directory.\
 \
 **Please load the modules before compiling**
-
+</details>
 
 ## Execution
 ### Execute Locally
