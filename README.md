@@ -11,6 +11,7 @@ This code was tested with:
 3. json-fortran https://github.com/jacobwilliams/json-fortran compiled with the same intel.
 4. cmake 3.15 or higher
 </details>
+
 ## Folders Documentation
 
 The src folder contains the source code files of ScalSALE, here is a short documentation of its subfolders.
