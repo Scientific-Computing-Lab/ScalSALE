@@ -6,6 +6,7 @@
 
 
 ScalSALE is a 2D/3D multi-physics framework for benchmarking supercomputers. It is based on the well-known SALE scheme and is capable on simulating with Lagrangian and Eulerian rezoning.
+
 ScalSALE is implemented in Modern Fortran with simple object-oriented design patterns, supported by transparent MPI-3 blocking and non-blocking communication and OpenMP's multi-threaded and accelerated support that allows such a scalable and comparable framework on any heterogeneous cluster.
 
 [DevMesh](https://devmesh.intel.com/projects/scalsale)
