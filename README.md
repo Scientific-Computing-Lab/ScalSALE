@@ -11,7 +11,7 @@ This code was tested with:
 4. cmake 3.15 or higher
 
 ## Folders Documentation
-
+<details><summary>Instructions</summary>
 The src folder contains the source code files of ScalSALE, here is a short documentation of its subfolders.
 
 |Folder                    |Documentation                                                                   |
