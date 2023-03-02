@@ -9,7 +9,20 @@ ScalSALE is a 2D/3D multi-physics framework for benchmarking supercomputers. It 
 
 [DevMesh](https://devmesh.intel.com/projects/scalsale)
 
-## Prerequisits
+<details><summary><strong>Table of Contents</strong></summary>
+
+1. [Prerequisits](#1-Prerequisits)
+2. [RayleAI - RTI Database](#2-rayleai-rti-database)
+3. [LIRE](#3-lire)
+4. [QATM](#4-qatm)
+5. [InfoGAN](#5-infogan)
+6. [pReg](#5-pReg)
+7. [PredRNN](#5-predrnn)
+8. [Citation](#8-cite)
+</details>
+
+
+## 1. Prerequisits
 <details><summary>Prerequisits</summary>
 
 This code was tested with:
