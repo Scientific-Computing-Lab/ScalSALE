@@ -12,13 +12,11 @@ ScalSALE is a 2D/3D multi-physics framework for benchmarking supercomputers. It 
 <details><summary><strong>Table of Contents</strong></summary>
 
 1. [Prerequisits](#1-Prerequisits)
-2. [RayleAI - RTI Database](#2-rayleai-rti-database)
-3. [LIRE](#3-lire)
-4. [QATM](#4-qatm)
-5. [InfoGAN](#5-infogan)
-6. [pReg](#5-pReg)
-7. [PredRNN](#5-predrnn)
-8. [Citation](#8-cite)
+2. [Folders](#2-Folders)
+3. [Compile & Install](#3-compile-and-install)
+4. [Exeuction](#4-execution)
+5. [Datafile](#5-datafile)
+6. [Sedov-Taylor Example](#5-st)
 </details>
 
 
@@ -32,7 +30,7 @@ This code was tested with:
 4. cmake 3.15 or higher
 </details>
 
-## Folders Documentation
+## 2. Folders Documentation
 
 The src folder contains the source code files of ScalSALE, here is a short documentation of its subfolders.
 
@@ -57,7 +55,7 @@ The src folder contains the source code files of ScalSALE, here is a short docum
 </details>
 
 
-## Compile & Install
+## 3. Compile & Install
 This project is built via cmake. In order to create the makefiles and the executable you need to run the following commands from the ScalSALE main directory:
 <details><summary>Instructions</summary>
 
@@ -80,7 +78,7 @@ Once the makefiles are created, you can simple compile the project with `./make.
 **Please load the modules before compiling**
 </details>
 
-## Execution
+## 4. Execution
 
 <details><summary>Execute Locally</summary>
 
@@ -110,7 +108,7 @@ module load intel/18.0.1.163 openmpi/4.0.4_intel mpi/impi-intel2018 cmake anacon
 ```
 </details>
 
-## Datafile
+## 5. Datafile
 The datafile is written as a json file (parsed via the json-fortran module explained above -- it is possible to write a new parser as long as it knows how to read a json file). The main objective of the datafile is to be parsed by the src/Input/datafile_object.f90 module which reads and parses the datafile in order to properly define the execution. 
 
 For the general case, expanding new options, or exploring existing ones can be found in the files datafile_object.f90, replace_words.f90 and defaults.f90 in the folder src/Input. Expanding the datafile can be simply done by following the same coding pattern - adding a default value if needed and allowing words instead of integers and finally parsing them and adding them to the datafile_object.f90 object (that will be passed to src/Main/problem.f90 which builds the classes and physical modules). 
@@ -279,7 +277,7 @@ The following segment will describe the datafile in pieces.
 	
 For more examples please refer to the different datafiles in src/Datafiles. 
 
-## Sedov-Taylor
+## 6. Sedov-Taylor
 
 #### Sedov-Taylor run example
 For example this is the initial state of the problem (3D, 15^3 cells)
