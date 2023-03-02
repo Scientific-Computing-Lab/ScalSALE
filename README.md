@@ -11,6 +11,9 @@ ScalSALE is implemented in Modern Fortran with simple object-oriented design pat
 
 [DevMesh](https://devmesh.intel.com/projects/scalsale)
 
+## Compile and Run on Intel DevCloud Video
+
+[![Watch the video](https://imgtr.ee/images/2023/03/02/RzxFD.png)](https://youtu.be/_Coyc3QM-nc) 
 <details><summary><strong>Table of Contents</strong></summary>
 
 1. [Prerequisits](#1-Prerequisits)
@@ -269,7 +272,7 @@ The following segment will describe the datafile in pieces.
 
 <details><summary>Rezone Type</summary>
 
-7. Rezone type - currently only Lagrange and Euler rezoneing are allowed. 0 for lagrange 1 for euler 
+6. Rezone type - currently only Lagrange and Euler rezoneing are allowed. 0 for lagrange 1 for euler 
 ```json
 "rezone_advect": {
         "rezone_type": 0
@@ -278,10 +281,6 @@ The following segment will describe the datafile in pieces.
 </details>
 	
 For more examples please refer to the different datafiles in src/Datafiles. 
-
-## 6. Compile and Run on Intel DevCloud Video
-
-[![Watch the video](https://imgtr.ee/images/2023/03/02/RzxFD.png)](https://youtu.be/_Coyc3QM-nc) 
 
 ## 7. Sedov-Taylor
 
