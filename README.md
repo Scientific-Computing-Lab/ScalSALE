@@ -1,10 +1,14 @@
+<p align="center">
 <img src="https://github.com/Scientific-Computing-Lab-NRCN/ScalSALE/blob/main/Images/scalesale.jpeg" width="300" height="300">
-![](Packages/com.alelievr.mixture/Documentation~/Images/Mixture-github.png)
+</p>
 
-# [ScalSALE: Scalable SALE Benchmark Framework for Supercomputers](https://devmesh.intel.com/projects/scalsale)
+# ScalSALE: Scalable SALE Benchmark Framework for Supercomputers
 
 
 ScalSALE is a 2D/3D multi-physics framework for benchmarking supercomputers. It is based on the well-known SALE scheme and is capable on simulating with Lagrangian and Eulerian rezoning.
+
+[DevMesh](https://devmesh.intel.com/projects/scalsale)
+
 ## Prerequisits
 <details><summary>Prerequisits</summary>
 
