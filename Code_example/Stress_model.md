@@ -3,6 +3,7 @@ Physical attributes such as stress play an important role in describing the moti
 
  As a case study, the following workflow describes how the stress module can be easily added to ScalSALE. Thus, expanding the code and demonstrating the idea of bridging the gap between benchmarks and the physical application.
 
+## The Stress model class
 Generally, in numerical codes, the physical stress model contains the stress tensor calculation. Consequently, the acceleration is updated accordingly. Therefore, a trivial connection to the hydrodynamics calculation is apparent due to the acceleration updates. However, the stress tensor calculation is independent to the hydrodynamic model. Hence, the stress model in ScalSALE is implemented in a separate class named stress_model (as seen in the code bellow).
 ```fortran
 type :: stress_model
