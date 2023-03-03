@@ -1,5 +1,7 @@
 # Stress model addition to ScalSALE
-Physical attributes such as stress play an important role in describing the motion of solids in hydrodynamic codes. As a case study, the following workflow describes how the stress module can be easily added to ScalSALE. Thus, expanding the code and demonstrating the idea of bridging the gap between benchmarks and the physical application.
+Physical attributes such as stress play an important role in describing the motion of solids in hydrodynamic codes. In non-compressible, visco-elastic, or visco-inelastic fluids, forces between the different layers of the fluid result in stress forces that oppose the fluid flow. The stress is strain and velocity dependent, influencing the fluid's momentum distribution and other hydrodynamic properties. Hence, the stress-strain-velocity relation, which is material-dependent, is crucial for describing the motion of visco-fluids correctly.
+
+ As a case study, the following workflow describes how the stress module can be easily added to ScalSALE. Thus, expanding the code and demonstrating the idea of bridging the gap between benchmarks and the physical application.
 
 In order to add new physical model to ScalSALE a class of the new physical model class need to be created. This class will contain all the relevant quantities and calculations for the new model. The stress model class can be seen below:
 ```fortran
