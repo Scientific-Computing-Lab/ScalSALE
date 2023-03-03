@@ -32,6 +32,7 @@ module hydro_step_module
     use communication_parameters_module , only : communication_parameters_t
     use communication_module            , only : communication_t
     use boundary_parameters_module      , only : boundary_parameters_t
+    use omp_lib
 
     implicit none
     private
@@ -359,10 +360,25 @@ contains
         type (time_t)                , intent (in out) :: time 
         real(8), dimension(:, :, :), pointer :: reem
         integer :: i,j
+        real(8), dimension(:, :, :), pointer :: velocity_x_target     
+        real(8), dimension(:, :, :), pointer :: velocity_y_target     
+        real(8), dimension(:, :, :), pointer :: velocity_z_target     
+        real(8), dimension(:, :, :), pointer :: x_target              
+        real(8), dimension(:, :, :), pointer :: y_target              
+        real(8), dimension(:, :, :), pointer :: z_target              
 
+        real(8), dimension(:, :, :), pointer :: vol_target            
+        real(8), dimension(:, :, :), pointer :: vof_target 
 
         call this%Calculate_thermodynamics()
 
+        call this%velocity%            Point_to_data(velocity_x_target, velocity_y_target, velocity_z_target)
+        call this%mesh%coordinates%Point_to_data(x_target, y_target, z_target)
+        call this%total_vof%       Point_to_data(vof_target)
+        call this%total_volume%    Point_to_data(vol_target)
+        !$omp target update to(x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target)
+        !TODO: optimize data movements
+        
         call time%Calculate_dt(this%mesh, this%velocity, this%rezone%mesh_velocity, this%vertex_mass, this%total_vof, this%emfm)
 
         this%cyc_delete = this%cyc_delete+1
