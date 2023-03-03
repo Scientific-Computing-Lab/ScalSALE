@@ -3,7 +3,7 @@ module velocity_module
     use vertex_quantity_module          , only : vertex_quantity_t
     use data_module                     , only : data_t
     use boundary_parameters_module      , only : boundary_parameters_t
-
+    use omp_lib
     implicit none
     private
     public :: velocity_t
@@ -171,7 +171,11 @@ contains
         integer :: i, j, k  
         integer :: ip,im,jp,jm, km,kp
         integer,save :: cntr = 0
-
+        integer :: ndev
+        logical :: do_offload
+        logical :: is_accel
+        integer :: SIZE
+        
         real(8) :: u1u2u4, u1u4u5, u1u2u5, u2u3u1, u2u1u6, u2u3u6, u3u4u2, &
             u3u2u7, u3u4u7, u4u1u3, u4u3u8, u4u1u8, u5u8u6, u5u6u1, &
             u5u8u1, u6u5u7, u6u7u2, u6u5u2, u7u6u8, u7u8u3, u7u6u3, &
@@ -222,7 +226,15 @@ contains
         call coordinates %Point_to_data(x, y, z)
         call total_vof   %Point_to_data(vof)
         call total_volume%Point_to_data(vol)
-
+        
+       SIZE = 100000 !TO DO: should be updated from the datafile
+       ndev = omp_get_num_devices()
+       do_offload = (ndev > 0 .and. nz*ny*nx > SIZE)
+       is_accel = .TRUE.
+       !$omp target if(do_offload) map(is_accel) map(to:x, y, z, velocity_x, velocity_y, velocity_z, vof, vol) map(from:dvel_x_dx, dvel_x_dy, dvel_x_dz, dvel_y_dx, dvel_y_dy, dvel_y_dz, dvel_z_dx, dvel_z_dy, dvel_z_dz)
+          IF (omp_is_initial_device()) is_accel = .FALSE.
+       !$omp teams distribute parallel do collapse(3) private(ip,jp,kp,x1,x2,x3,x4,x5,x6,x7,x8,y1,y2,y3,y4,y5,y6,y7,y8,z1,z2,z3,z4,z5,z6,z7,z8,u1,u2,u3,u4,u5,u6,u7,u8) &
+       !$omp& private(v1,v2,v3,v4,v5,v6,v7,v8,w1,w2,w3,w4,w5,w6,w7,w8) 
         do k = 1, nz
             do j = 1, ny
                 do i = 1, nx
@@ -440,6 +452,11 @@ contains
                 end do
             end do
         end do
+        !$omp end teams distribute parallel do    
+        !$omp end target
+        write(*,*) "kernel executed on accelerator:", is_accel
+        write(*,*) "Derivatives Kernel time: ", omp_get_wtime() - start_time
+        !$omp target update from(dvel_x_dx, dvel_x_dy, dvel_x_dz, dvel_y_dx, dvel_y_dy, dvel_y_dz, dvel_z_dx, dvel_z_dy, dvel_z_dz)
         cntr = cntr  + 1
     end subroutine Calculate_derivatives
 
