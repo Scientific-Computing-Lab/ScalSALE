@@ -49,6 +49,7 @@ module problem_module
     !   use hdf5
     !   use cr_module                       , only : cr_t
     use mpi
+    use omp_lib
     implicit none
     private
 
@@ -679,6 +680,27 @@ contains
         type(communication_t)    , pointer       :: communication
         integer :: aaaai
         integer :: ncyc, max_ncyc
+        real(8), dimension(:, :, :), pointer :: dvel_x_dx_target   
+        real(8), dimension(:, :, :), pointer :: dvel_x_dy_target     
+        real(8), dimension(:, :, :), pointer :: dvel_x_dz_target     
+        real(8), dimension(:, :, :), pointer :: dvel_y_dx_target     
+        real(8), dimension(:, :, :), pointer :: dvel_y_dy_target    
+        real(8), dimension(:, :, :), pointer :: dvel_y_dz_target     
+        real(8), dimension(:, :, :), pointer :: dvel_z_dx_target     
+        real(8), dimension(:, :, :), pointer :: dvel_z_dy_target     
+        real(8), dimension(:, :, :), pointer :: dvel_z_dz_target     
+
+        real(8), dimension(:, :, :), pointer :: velocity_x_target     
+        real(8), dimension(:, :, :), pointer :: velocity_y_target     
+        real(8), dimension(:, :, :), pointer :: velocity_z_target     
+        real(8), dimension(:, :, :), pointer :: x_target              
+        real(8), dimension(:, :, :), pointer :: y_target              
+        real(8), dimension(:, :, :), pointer :: z_target              
+
+        real(8), dimension(:, :, :), pointer :: vol_target            
+        real(8), dimension(:, :, :), pointer :: vof_target 
+      
+      
         !        call this%cr%Get_ckpt_name(this%name, ckpt_name)
 #ifdef DEBUG
         write(*,*) '@@@@ ATTACHE TO PROCESS AND CHANGE i to 0 TO CONTINUE EXECUTION @@@@'
@@ -710,6 +732,27 @@ contains
             end do
 
         else if (this%mesh%dimension == 3) then
+        
+            call this%velocity%dvelocity_x_dx%Point_to_data(dvel_x_dx_target)
+            call this%velocity%dvelocity_x_dy%Point_to_data(dvel_x_dy_target)
+            call this%velocity%dvelocity_x_dz%Point_to_data(dvel_x_dz_target)
+            call this%velocity%dvelocity_y_dx%Point_to_data(dvel_y_dx_target)
+            call this%velocity%dvelocity_y_dy%Point_to_data(dvel_y_dy_target)
+            call this%velocity%dvelocity_y_dz%Point_to_data(dvel_y_dz_target)
+            call this%velocity%dvelocity_z_dx%Point_to_data(dvel_z_dx_target)
+            call this%velocity%dvelocity_z_dy%Point_to_data(dvel_z_dy_target)
+            call this%velocity%dvelocity_z_dz%Point_to_data(dvel_z_dz_target)
+    
+            call this%velocity%            Point_to_data(velocity_x_target, velocity_y_target, velocity_z_target)
+            call this%mesh%coordinates%Point_to_data(x_target, y_target, z_target)
+            call this%total_vof%       Point_to_data(vof_target)
+            call this%total_volume%    Point_to_data(vol_target)
+            
+            write(*,*) "Number of Available devices: ", omp_get_num_devices()
+            !$omp target enter data map(to: x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target) &
+            !$omp& map(alloc: dvel_x_dx_target, dvel_x_dy_target, dvel_x_dz_target, dvel_y_dx_target, dvel_y_dy_target, &
+            !$omp& dvel_y_dz_target, dvel_z_dx_target, dvel_z_dy_target, dvel_z_dz_target)
+        
             do while (this%time%Should_continue() .and. ncyc < max_ncyc)
                 start = omp_get_wtime()
                 call this%hydro%do_time_step_3d(this%time)
@@ -720,6 +763,11 @@ contains
                 write(*,*) "Cycle time: ", omp_get_wtime()-start
             !      call this%cr%Checkpoint(ckpt_name)
             end do
+            
+            !$omp target exit data map(delete: x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target) &
+            !$omp& map(from: dvel_x_dx_target, dvel_x_dy_target, dvel_x_dz_target, dvel_y_dx_target, dvel_y_dy_target,&
+            !$omp& dvel_y_dz_target, dvel_z_dx_target, dvel_z_dy_target, dvel_z_dz_target)
+            
         end if
 
         !print some cell quantities at the end of the calculation to help you debug your code.
