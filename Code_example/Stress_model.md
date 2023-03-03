@@ -3,8 +3,7 @@ Physical attributes such as stress play an important role in describing the moti
 
  As a case study, the following workflow describes how the stress module can be easily added to ScalSALE. Thus, expanding the code and demonstrating the idea of bridging the gap between benchmarks and the physical application.
 
-## The Stress model class
-Generally, in numerical codes, the physical stress model contains the stress tensor calculation. Consequently, the acceleration is updated accordingly. Therefore, a trivial connection to the hydrodynamics calculation is apparent due to the acceleration updates. However, the stress tensor calculation is independent to the hydrodynamic model. Hence, the stress model in ScalSALE is implemented in a separate class named stress_model (as seen in the code bellow).
+1. Generally, in numerical codes, the physical stress model contains the stress tensor calculation. Consequently, the acceleration is updated accordingly. Therefore, a trivial connection to the hydrodynamics calculation is apparent due to the acceleration updates. However, the stress tensor calculation is independent to the hydrodynamic model. Hence, the stress model in ScalSALE is implemented in a separate class named stress_model (as seen in the code bellow).
 ```fortran
 type :: stress_model
   type(shear_modulus_t) , pointer :: shear
@@ -16,6 +15,17 @@ type :: stress_model
 end type stress_model
 ```
 *This class described the new physical stress module. It contains two main functions, a function that calculates the stress in the current time step and a function that update the acceleration values using the updated stress tensor.*
+
+2. To perform the two calculations in the stress module, the following cell-related physical quantities are added to ScalSALE: the stress tensor, strain, yield, and shear modulus. Each physical quantity inherits from the cell quantity base class, as seen in the code bellow. In addition, the yield and shear modulus quantities are created and contained in the Materials class, as they are material-related and independent of the stress model calculations. In comparison, the stress tensor physical quantity resides in the Stress_model, as it depends on the model calculation.
+
+```fortran
+type, extends(cell_quantity_t) :: stress_tensor_t
+   ...
+end type stress_tensor_t
+```
+*The class describing the new stress tensor quantity, it inherent from the cell quantity base type.*
+
+3. The material-related quantities (yield and shear modulus) calculation is implemented in the Materials class, as seen in lines 13--44 in the code bellow, and it is based on the Steinberg stress hardening calculation. In case a new implementation of the yield and shear modulus calculation, a simple select-case can be added, or create a new Materials class that inherits from the existing Materials class. In lines 40--41, the parallelization synchronization is done using a blocking manner.
 
 ```fortran
 module material_module
@@ -56,34 +66,6 @@ contains
     call yield%Exchange_virtual_space_blocking()
   end subroutine Apply_stress_module
 ```
+*This code describes adding a new material-dependent calculation in the material class. The numerical stress model calculations of shear and yield use the Steinberg stress hardening model*
 
-## Prerequisits
-
-This code was tested with:
-1. intel/2017 or intel/2018 and OneAPI 2021
-2. OpenMPI 1.10.4, 4.0.4, 4.1.3 - any OpenMPI that supports MPI3+ standard.
-3. json-fortran https://github.com/jacobwilliams/json-fortran compiled with the same intel.
-4. cmake 3.15 or higher
-
-## Folders Documentation
-
-The src folder contains the source code files of ScalSALE, here is a short documentation of its subfolders.
-
-|Folder                    |Documentation                                                                   |
-|:---:                     |:---                                                                            |
-|**Boundary_conditions**   |Contains the classes that implement the Boundary Conditions                     |
-|**CR**                    |Contains the classes that implement the Checkpoint Restart                      |
-|**Datafiles**             |Contains all the input datafiles for ScalSALE                                     |
-|**General**               |Contains General modules and code files for ScalSALE                              |
-|**Input**                 |Contains the classes that parse the input datafile                              |
-|**Main**                  |Contains the main code files of ScalSALE                                          |
-|**Material**              |Contains the classes that belong to the materials                               |
-|**Mesh**                  |Contains the mesh implementation classes                                        |
-|**Parallel**              |Contains the Parallelization implementation classes                             |
-|**Quantities**            |Contains all the Physical quantities classes in ScalSALE                          |
-|**Rezone_and_Advect**     |Contains the implementation of the rezone and advection classes                 |
-|**Scripts**               |Contains the Scripts code files                                                 |
-|**Time_step**             |Contains the hydrodynamic time step implementation                              |
-|**exec**                  |Contains the executable file, created after compilation                         |
-
-
+4. Finally, to include the stress calculation to ScalSALE, the stress_model is called from the main problem loop after the hydrodynamic calculation.
