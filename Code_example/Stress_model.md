@@ -3,7 +3,7 @@ Physical attributes such as stress play an important role in describing the moti
 
  As a case study, the following workflow describes how the stress module can be easily added to ScalSALE. Thus, expanding the code and demonstrating the idea of bridging the gap between benchmarks and the physical application.
 
-In order to add new physical model to ScalSALE a class of the new physical model class need to be created. This class will contain all the relevant quantities and calculations for the new model. The stress model class can be seen below:
+Generally, in numerical codes, the physical stress model contains the stress tensor calculation. Consequently, the acceleration is updated accordingly. Therefore, a trivial connection to the hydrodynamics calculation is apparent due to the acceleration updates. However, the stress tensor calculation is independent to the hydrodynamic model. Hence, the stress model in ScalSALE is implemented in a separate class named stress_model (as seen in the code bellow).
 ```fortran
 type :: stress_model
   type(shear_modulus_t) , pointer :: shear
@@ -14,8 +14,48 @@ type :: stress_model
     procedure :: Update_acceleration
 end type stress_model
 ```
-
 *This class described the new physical stress module. It contains two main functions, a function that calculates the stress in the current time step and a function that update the acceleration values using the updated stress tensor.*
+
+```fortran
+module material_module
+  type, extends(material_base_t) :: material_t
+    integer, dimension(:) :: stress_module_type 
+    ! mat dependent module type (steinberg, perfect, etc)
+    contains
+      procedure :: Apply_stress_module 
+      !calculations of the stress yield and shear
+  end type material_t
+contains
+  subroutine Apply_stress_module(this, shear, yield)
+    implicit none
+    class(material_t), intent(in out) :: this
+    type(shear_modulus_t), pointer, intent(in out) :: shear 
+    ! the shear modulus for every material
+    type(stress_yield_t), pointer, intent(in out) :: yield 
+    ! the yield for every material
+    integer :: i, j, k, m
+    do m=1, nmats ! loop over all materials
+      do k=1, nz ! in the loops we calculate shear and yield for the steinberg model
+        do j=1, ny
+          do i=1, nx
+            ! yield and shear calculations using the Steinberg stress hardening model
+            eta = density0(i,j,k)/density(i,j,k)
+            shear(m,i,j,k) = shear0+GP_steinberg(m)* &
+              pressure(i,j,k)*eta**(1d0/3)+GT_steinberg(m)* &
+             (temperature(i,j,k)-init_temperature(i,j,k))
+            yield(m,i,j,k) = min(Y0(m)*(1+BETA_steinberg(m)* &
+              plastic_strain(i,j,k)) ** N_steinberg(m) &
+              ,YIELD_max(m))*(shear(m,i,j,k)/shear0(m))
+          end do
+        end do
+      end do
+    end do
+    !the MPI synchronization 
+    call shear%Exchange_virtual_space_blocking() 
+    call yield%Exchange_virtual_space_blocking()
+  end subroutine Apply_stress_module
+```
+
 ## Prerequisits
 
 This code was tested with:
