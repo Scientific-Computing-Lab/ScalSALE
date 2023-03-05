@@ -169,6 +169,7 @@ contains
         real(8) :: w1, w2, w3, w4, w5, w6, w7, w8  
 
         integer :: i, j, k  
+        real(8) :: start_time
         integer :: ip,im,jp,jm, km,kp
         integer,save :: cntr = 0
         integer :: ndev
