@@ -1,3 +1,4 @@
+# 1 "/home/u187784/High-Performance-Computing-236606/ScalSALE/src/Time_step/hydro_step.f90"
 
 module hydro_step_module
     use vertex_boundary_condition_module, only : vertex_boundary_condition_t
@@ -376,8 +377,8 @@ contains
         call this%mesh%coordinates%Point_to_data(x_target, y_target, z_target)
         call this%total_vof%       Point_to_data(vof_target)
         call this%total_volume%    Point_to_data(vol_target)
-        !$omp target update to(x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target)
-        !TODO: optimize data movements
+!$omp target update to(x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target)
+!TODO: optimize data movements
         
         call time%Calculate_dt(this%mesh, this%velocity, this%rezone%mesh_velocity, this%vertex_mass, this%total_vof, this%emfm)
 
@@ -496,8 +497,8 @@ contains
         tmp = omp_get_wtime()
         call this%total_sie%Exchange_virtual_space_nonblocking()
         call this%total_cell_mass%Exchange_virtual_space_nonblocking()
-       ! call this%vertex_mass%Exchange_virtual_space_nonblocking()
-       ! call this%inversed_vertex_mass%Exchange_virtual_space_nonblocking()
+! call this%vertex_mass%Exchange_virtual_space_nonblocking()
+! call this%inversed_vertex_mass%Exchange_virtual_space_nonblocking()
         call this%mat_id%Exchange_virtual_space_nonblocking()
         call this%num_mat_cells%Exchange_virtual_space_nonblocking()
         call this%total_vof%Exchange_virtual_space_nonblocking()
@@ -1659,10 +1660,10 @@ contains
 
 
                         if (mat_vof(tmp_mat, i, j, 1) < this%emf) then
-                            !                            sie_vof(i, j, 1) = 0d0
+!                            sie_vof(i, j, 1) = 0d0
                             temperature_vof(tmp_mat, i, j, 1) = 0d0
                         else
-                            !                            sie_vof_temp = sie_vof(i, j, 1)
+!                            sie_vof_temp = sie_vof(i, j, 1)
                             if (nmats_in_cell(i, j, 1) == 1d0) then
                                 pressure_temp = pressure(i, j, 1)
 
@@ -2723,9 +2724,8 @@ call this%materials%sie%exchange_end()
         character(*), intent(in out)  :: iomsg
         integer :: i
 
-#ifdef DEBUG
-        write(*,*) "@@@ in Write_hydro_step @@@"
-#endif
+# 2728
+
 !        call this%num_mat_cells%Write_quantity_abstract(unit, iostat=iostat, iomsg=iomsg)
 !        call this%mat_id%Write_quantity_abstract(unit, iostat=iostat, iomsg=iomsg)
 !        call this%mesh%Write_mesh_abstract(unit, iostat=iostat, iomsg=iomsg)
@@ -2741,9 +2741,8 @@ call this%materials%sie%exchange_end()
 !            call  this%materials(i)%Write_material_abstract(unit, iostat=iostat, iomsg=iomsg)
 !        end do
 
-#ifdef DEBUG
-        write(*,*) "@@@ end Write_hydro_step @@@"
-#endif
+# 2746
+
 
     end subroutine Write_hydro_step
 
@@ -2754,9 +2753,8 @@ call this%materials%sie%exchange_end()
         character(*), intent(in out)  :: iomsg
         integer :: i
 
-#ifdef DEBUG
-        write(*,*) "@@@ in Read_hydro_step @@@"
-#endif
+# 2759
+
 !        call this%num_mat_cells%Read_quantity_abstract(unit, iostat=iostat, iomsg=iomsg)
 !        call this%mat_id%Read_quantity_abstract(unit, iostat=iostat, iomsg=iomsg)
 !        call this%mesh%Read_mesh_abstract(unit, iostat=iostat, iomsg=iomsg)
@@ -2774,9 +2772,8 @@ call this%materials%sie%exchange_end()
 
 
 
-#ifdef DEBUG
-        write(*,*) "@@@ end Read_hydro_step @@@"
-#endif
+# 2779
+
 
     end subroutine Read_hydro_step
    

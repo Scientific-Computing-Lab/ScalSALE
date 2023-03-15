@@ -120,7 +120,7 @@
         ]
     }, 
     "diagnostics": {
-        "number_diagnostics": 1,
+        "number_diagnostics": 0,
         "group": [
             {
                 "condition": 1,
@@ -137,17 +137,17 @@
     	"number_layers_j": 2,
         "number_cells_j": [
             1,
-            239
+            149
         ], 
         "number_layers_i": 2, 
         "number_cells_i": [
             1,
-            239
+            149
         ],
         "number_layers_k":2,
         "number_cells_k": [
             1,
-            239
+            149
         ],
         "materials": [
             "Air", 
@@ -179,9 +179,9 @@
         "rezone_type": "lagrange"
     },
 "parallel":{
-"np":27,
-"npz":3,
-"npy":3,
-"npx":3
+"np":1,
+"npz":1,
+"npy":1,
+"npx":1
 }
 }

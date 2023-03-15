@@ -11,14 +11,20 @@
 rm -rf Silo_Diagnostics/*
 rm *.so 2>/dev/null
 
+NP=$1
+if [ $# -eq 0 ]; then
+    NP=1
+    echo "setting NP value to 1 (default)"
+fi
+
 export SCR_CONF_FILE=`pwd`/../CR/scr_conf.conf
 export SCR_RUNS=4
-if test "$1" = "cr"
+if test "$NP" = "cr"
 then
 	scr_mpirun -n 1 -mca btl self,sm,openib python ../Main/main.py
 else
 #	mpirun -n 1 -mca btl self,sm,openib ../exec/main
     #mpirun -n 1 -mca btl self,sm,openib ../exec/main
     #mpirun -n 8 ../exec/main
-    mpirun -n $1 ../exec/main
+    mpirun -n $NP ../exec/main
 fi

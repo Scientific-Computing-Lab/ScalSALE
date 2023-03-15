@@ -1,0 +1,93 @@
+
+########################################################################
+#      Date:           Sun 12 Mar 2023 09:27:29 AM PDT
+#    Job ID:           2248078.v-qsvr-1.aidevcloud
+#      User:           u187784
+# Resources:           cput=75:00:00,neednodes=1:gpu:ppn=2,nodes=1:gpu:ppn=2,walltime=06:00:00
+########################################################################
+
+setting NP value to 1 (default)
+ 0
+  making sedov-taylor
+ done mesh
+ Done diagnostics
+ finished building problem
+ Number of Available devices:            0
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638466.60823     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638468.70045     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638470.26436     
+ Cycle time:    6.35946989059448     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638472.93446     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638475.00451     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638476.56159     
+ Cycle time:    6.29498195648193     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638479.22994     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638481.29919     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638482.85282     
+ Cycle time:    6.29152798652649     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638485.52348     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638487.59646     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638489.14995     
+ Cycle time:    6.29718303680420     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638491.82100     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638493.89028     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638495.48151     
+ Cycle time:    6.33088588714600     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638498.14759     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638500.21797     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638501.82402     
+ Cycle time:    6.34264492988586     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638504.49114     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638506.56156     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638508.11653     
+ Cycle time:    6.29178595542908     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638510.78349     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638512.85551     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638514.41182     
+ Cycle time:    6.29487800598145     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638517.07862     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638519.15300     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638520.70955     
+ Cycle time:    6.29819607734680     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638523.37660     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638525.44930     
+ kernel executed on accelerator: T
+ Derivatives Kernel time:    1678638527.01870     
+ Cycle time:    6.30487179756165     
+ Total Time:   63.1393530368805     
+ ncyc:           10
+
+########################################################################
+# End of output for job 2248078.v-qsvr-1.aidevcloud
+# Date: Sun 12 Mar 2023 09:28:47 AM PDT
+########################################################################
+

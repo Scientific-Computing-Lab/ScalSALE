@@ -1,5 +1,9 @@
 #! /bin/bash
 
+#default:
+# FC_SETTING=mpif90
+FC_SETTING=myfort
+
 #module load cmake/X.XX.2 eclipse/2018 gcc/9.1.0 intel/2017 mpi/openmpi-1.6.4-gcc-9.1.0 pFUnit/3.2.9-intel-openmpi hdf5/1.8.9-openmpi-1.6.4-gcc-9.1.0 silo/4.8-openmpi-1.6.4-gcc-9.1.0
 #module load cmake/X.XX.2 gcc/9.1.0 eclipse/2018 intel/2017 json-fortran/intel-2017 mpi/openmpi-1.10.4-intel-2017 pFUnit/3.2.9-openmpi-1.10.4-intel-2017 hdf5/1.8.9-openmpi-1.10.4-intel-2017 silo/4.8-openmpi-1.10.4-intel-2017 scr/1.2.0-openmpi-1.10.4-intel-2017 
 #module purge
@@ -16,10 +20,10 @@ cd ../../build
 if test "$1" = "GNU"
 then
   echo "@@@@ GNU @@@@"
-  FC=mpif90 cmake ../src/
+  FC=$FC_SETTING cmake ../src/
 else
   echo "@@@@ INTEL @@@@"
-  FC=mpif90 cmake ../src 
+  FC=$FC_SETTING cmake ../src 
 fi
 #if test "$1" = tests
 #then 

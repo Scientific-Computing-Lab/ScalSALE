@@ -1,3 +1,4 @@
+# 1 "/home/u187784/High-Performance-Computing-236606/ScalSALE/src/Quantities/Vertex/velocity.f90"
 
 module velocity_module
     use vertex_quantity_module          , only : vertex_quantity_t
@@ -232,10 +233,10 @@ contains
        ndev = omp_get_num_devices()
        do_offload = (ndev > 0 .and. nz*ny*nx > SIZE)
        is_accel = .TRUE.
-       !$omp target if(do_offload) map(is_accel) map(to:x, y, z, velocity_x, velocity_y, velocity_z, vof, vol) map(from:dvel_x_dx, dvel_x_dy, dvel_x_dz, dvel_y_dx, dvel_y_dy, dvel_y_dz, dvel_z_dx, dvel_z_dy, dvel_z_dz)
-       !$omp teams distribute parallel do collapse(3) private(ip,jp,kp,x1,x2,x3,x4,x5,x6,x7,x8,y1,y2,y3,y4,y5,y6,y7,y8,z1,z2,z3,z4,z5,z6,z7,z8,u1,u2,u3,u4,u5,u6,u7,u8) &
-       !$omp& private(v1,v2,v3,v4,v5,v6,v7,v8,w1,w2,w3,w4,w5,w6,w7,w8) 
-    !    IF (omp_is_initial_device()) is_accel = .FALSE.
+!$omp target if(do_offload) map(is_accel) map(to:x, y, z, velocity_x, velocity_y, velocity_z, vof, vol) map(from:dvel_x_dx, dvel_x_dy, dvel_x_dz, dvel_y_dx, dvel_y_dy, dvel_y_dz, dvel_z_dx, dvel_z_dy, dvel_z_dz)
+!$omp teams distribute parallel do collapse(3) private(ip,jp,kp,x1,x2,x3,x4,x5,x6,x7,x8,y1,y2,y3,y4,y5,y6,y7,y8,z1,z2,z3,z4,z5,z6,z7,z8,u1,u2,u3,u4,u5,u6,u7,u8) &
+!$omp& private(v1,v2,v3,v4,v5,v6,v7,v8,w1,w2,w3,w4,w5,w6,w7,w8)
+!    IF (omp_is_initial_device()) is_accel = .FALSE.
         do k = 1, nz
             do j = 1, ny
                 do i = 1, nx
@@ -244,21 +245,21 @@ contains
                     kp = k + 1
                     if (vof(i,j,k) < emf) cycle
 
-                    ! for(int ai = 0; ai < 2; ++ai)
-                    !     for(int aj = 0; aj < 2; ++aj)
-                    !         for(int ak = 0; ak < 2; ++ak)
-                    !             xs[ai<<2+aj<<1+ak]=x(i+ai, j+aj, k+ak)
+! for(int ai = 0; ai < 2; ++ai)
+!     for(int aj = 0; aj < 2; ++aj)
+!         for(int ak = 0; ak < 2; ++ak)
+!             xs[ai<<2+aj<<1+ak]=x(i+ai, j+aj, k+ak)
                     
-                    ! for(int itr = 0; itr < 1<<3; ++itr)
-                    !     xs[itr]=x(i+(itr&0b001), j+(itr&0b010), k+(itr&0b100))
+! for(int itr = 0; itr < 1<<3; ++itr)
+!     xs[itr]=x(i+(itr&0b001), j+(itr&0b010), k+(itr&0b100))
 
                     x1 = x(i,   j,   k)
                     x2 = x(i+1, j,   k)
-                    x4 = x(i,   j+1, k)!swap x3<->x4 ??
+                    x4 = x(i,   j+1, k)
                     x3 = x(i+1, j+1, k)
                     x5 = x(i,   j,   k+1)
                     x6 = x(i+1, j,   k+1)
-                    x8 = x(i,   j+1, k+1)!swap x8<->x7?
+                    x8 = x(i,   j+1, k+1)
                     x7 = x(i+1, j+1, k+1)
 
                     y1 = y(i, j, k)
@@ -278,6 +279,34 @@ contains
                     z6 = z(ip, j, kp)
                     z7 = z(ip, jp, kp)
                     z8 = z(i, jp, kp)
+
+                    u1 = velocity_x(i, j, k)
+                    u2 = velocity_x(ip, j, k)
+                    u3 = velocity_x(ip, jp, k)
+                    u4 = velocity_x(i, jp, k)
+                    u5 = velocity_x(i, j, kp)
+                    u6 = velocity_x(ip, j, kp)
+                    u7 = velocity_x(ip, jp, kp)
+                    u8 = velocity_x(i, jp, kp)
+
+                    v1 = velocity_y(i, j, k)
+                    v2 = velocity_y(ip, j, k)
+                    v3 = velocity_y(ip, jp, k)
+                    v4 = velocity_y(i, jp, k)
+                    v5 = velocity_y(i, j, kp)
+                    v6 = velocity_y(ip, j, kp)
+                    v7 = velocity_y(ip, jp, kp)
+                    v8 = velocity_y(i, jp, kp)
+
+                    w1 = velocity_z(i, j, k)
+                    w2 = velocity_z(ip, j, k)
+                    w3 = velocity_z(ip, jp, k)
+                    w4 = velocity_z(i, jp, k)
+                    w5 = velocity_z(i, j, kp)
+                    w6 = velocity_z(ip, j, kp)
+                    w7 = velocity_z(ip, jp, kp)
+                    w8 = velocity_z(i, jp, kp)
+
 
                     call Vector_grad_planes(y1, y2, y3, y4, y5, y6, y7, y8, &
                         z1, z2, z3, z4, z5, z6, z7, z8, y4y1z2z1z4z1y2y1, y5y1z4z1z5z1y4y1, y2y1z5z1z2z1y5y1, &
@@ -307,15 +336,6 @@ contains
                         x8x7y6y7y8y7x6x7, x3x7y8y7y3y7x8x7, x6x7y3y7y6y7x3x7, &
                         x5x8y7y8y5y8x7x8, x4x8y5y8y4y8x5x8, x7x8y4y8y7y8x4x8)
 
-
-                    u1 = velocity_x(i, j, k)
-                    u2 = velocity_x(ip, j, k)
-                    u3 = velocity_x(ip, jp, k)
-                    u4 = velocity_x(i, jp, k)
-                    u5 = velocity_x(i, j, kp)
-                    u6 = velocity_x(ip, j, kp)
-                    u7 = velocity_x(ip, jp, kp)
-                    u8 = velocity_x(i, jp, kp)
                     call Vector_grad_vec(u1, u2, u3, u4, u5, u6, u7, u8, u1u2u4, u1u4u5, u1u2u5, &
                         u2u3u1, u2u1u6, u2u3u6, &
                         u3u4u2, u3u2u7, u3u4u7, &
@@ -358,14 +378,6 @@ contains
                         (u8u7u5 * x5x8y7y8y5y8x7x8 + u8u5u4 * x4x8y5y8y4y8x5x8 + u8u7u4 * x7x8y4y8y7y8x4x8))
 
 
-                    v1 = velocity_y(i, j, k)
-                    v2 = velocity_y(ip, j, k)
-                    v3 = velocity_y(ip, jp, k)
-                    v4 = velocity_y(i, jp, k)
-                    v5 = velocity_y(i, j, kp)
-                    v6 = velocity_y(ip, j, kp)
-                    v7 = velocity_y(ip, jp, kp)
-                    v8 = velocity_y(i, jp, kp)
                     call Vector_grad_vec(v1, v2, v3, v4, v5, v6, v7, v8, u1u2u4, u1u4u5, u1u2u5, &
                         u2u3u1, u2u1u6, u2u3u6, &
                         u3u4u2, u3u2u7, u3u4u7, &
@@ -409,14 +421,7 @@ contains
                         (u8u7u5 * x5x8y7y8y5y8x7x8 + u8u5u4 * x4x8y5y8y4y8x5x8 + u8u7u4 * x7x8y4y8y7y8x4x8))
 
 
-                    w1 = velocity_z(i, j, k)
-                    w2 = velocity_z(ip, j, k)
-                    w3 = velocity_z(ip, jp, k)
-                    w4 = velocity_z(i, jp, k)
-                    w5 = velocity_z(i, j, kp)
-                    w6 = velocity_z(ip, j, kp)
-                    w7 = velocity_z(ip, jp, kp)
-                    w8 = velocity_z(i, jp, kp)
+
                     call Vector_grad_vec(w1, w2, w3, w4, w5, w6, w7, w8, u1u2u4, u1u4u5, u1u2u5, u2u3u1, u2u1u6, u2u3u6, u3u4u2, &
                         u3u2u7, u3u4u7, u4u1u3, u4u3u8, u4u1u8, u5u8u6, u5u6u1, &
                         u5u8u1, u6u5u7, u6u7u2, u6u5u2, u7u6u8, u7u8u3, u7u6u3, &
@@ -457,11 +462,11 @@ contains
                 end do
             end do
         end do
-        !$omp end teams distribute parallel do    
-        !$omp end target
-        ! write(*,*) "kernel executed on accelerator:", is_accel
-        ! write(*,*) "Derivatives Kernel time: ", omp_get_wtime() - start_time
-        !$omp target update from(dvel_x_dx, dvel_x_dy, dvel_x_dz, dvel_y_dx, dvel_y_dy, dvel_y_dz, dvel_z_dx, dvel_z_dy, dvel_z_dz)
+!$omp end teams distribute parallel do
+!$omp end target
+! write(*,*) "kernel executed on accelerator:", is_accel
+! write(*,*) "Derivatives Kernel time: ", omp_get_wtime() - start_time
+!$omp target update from(dvel_x_dx, dvel_x_dy, dvel_x_dz, dvel_y_dx, dvel_y_dy, dvel_y_dz, dvel_z_dx, dvel_z_dy, dvel_z_dz)
         cntr = cntr  + 1
     end subroutine Calculate_derivatives
 
@@ -651,15 +656,13 @@ contains
         integer,      intent(out)    :: iostat
         character(*), intent(in out)  :: iomsg
 
-#ifdef DEBUG
-        write(*,*) '@@@ in Write_velocity @@@'
-#endif
+# 660
+
 
         call this%Write_vertex_quantity(unit, iostat=iostat, iomsg=iomsg)
 
-#ifdef DEBUG
-        write(*,*) '@@@ end Write_velocity @@@'
-#endif
+# 666
+
 
     end subroutine Write_velocity
 
@@ -669,15 +672,13 @@ contains
         integer,      intent(out)    :: iostat
         character(*), intent(in out)  :: iomsg
 
-#ifdef DEBUG
-        write(*,*) '@@@ in Read_velocity @@@'
-#endif
+# 678
+
 
         call this%Read_vertex_quantity(unit, iostat=iostat, iomsg=iomsg)
 
-#ifdef DEBUG
-        write(*,*) '@@@ end Read_velocity @@@'
-#endif
+# 684
+
 
     end subroutine Read_velocity
 

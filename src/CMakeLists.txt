@@ -3,20 +3,21 @@ cmake_minimum_required (VERSION 3.5.2)
 project(BACKUS)
 enable_language (Fortran)
 
-#set(CMAKE_Fortran_COMPILER ifort)
-#set(FC "ifort")
+# set(CMAKE_Fortran_COMPILER ifort)
+# set(FC "myfort")
 #set(CMAKE_Fortran_FLAGS "-fPIC -O0 -cpp -g -fpp -fpe0 -traceback -fp-model source -fimf-arch-consistency=true -fp-stack-check -debug -check bounds -check format -check output_conversion -check pointers  -check uninit -qopenmp")
 #set(CMAKE_Fortran_FLAGS "-fPIC -O2 -cpp -g -fpp -fpe0 -traceback -fp-model source -fimf-arch-consistency=true -fp-stack-check -debug -check bounds -check format -check output_conversion -check pointers  -check uninit -qopenmp")
 #set(CMAKE_Fortran_FLAGS "-fPIC -cpp -fpp -O2 -qopenmp")
 add_definitions($ENV{DEFS})
 
 if (CMAKE_Fortran_COMPILER_ID STREQUAL "GNU")
-set(ENV{JSONFORTRAN} "/home/reemh/Downloads/json-fortran_gnu")
+set(ENV{JSONFORTRAN} "/home/u187784/High-Performance-Computing-236606/json-fortran/build")
 set(CMAKE_Fortran_FLAGS "-fPIC -cpp -fopenmp -O0 -ffree-line-length-512")
 #-mavx512f -Ofast
 else()
-set(ENV{JSONFORTRAN} "/home/reemh/Downloads/json-fortran")
-set(CMAKE_Fortran_FLAGS "-fPIC -cpp -fpp -O2 -g -qopenmp ")
+set(ENV{JSONFORTRAN} "/home/u187784/High-Performance-Computing-236606/json-fortran/build")
+set(CMAKE_Fortran_FLAGS "-fPIC -cpp -fpp -O2 -qopenmp")
+#original flags: -fPIC -cpp -fpp -O2 -g -qopenmp  
 endif()
 
 #set(CMAKE_Fortran_FLAGS "-g -qopenmp -fpp -fPIC -traceback -fpe0")
