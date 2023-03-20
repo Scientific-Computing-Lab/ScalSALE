@@ -182,8 +182,10 @@ contains
       call c_mass     %Point_to_data(cell_mass)
       call tot_density%Point_to_data(density)
       call coordinates%Point_to_data(x, y, z)
+      vertex_mass(1:nxp, 1:nyp , 1:nzp) = 0d0 !do inside loop?
 
-         vertex_mass(1:nxp, 1:nyp , 1:nzp) = 0d0
+      call omp_set_num_threads(24)
+      !$omp parallel do schedule(guided) private(kk, jj, ii, i1, i2, i3, j1, j2, j3, k1, k2, k3)
          do k = 1, nzp
             do j = 1, nyp
                do i = 1, nxp
@@ -222,11 +224,7 @@ contains
                end do
             end do
          end do
-
-
-
-
-
+      !$omp end parallel do
 
 cyc = cyc + 1
    end subroutine Calculate_vertex_mass_3d

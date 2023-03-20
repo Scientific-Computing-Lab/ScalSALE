@@ -16,7 +16,7 @@ set(CMAKE_Fortran_FLAGS "-fPIC -cpp -fopenmp -O0 -ffree-line-length-512")
 #-mavx512f -Ofast
 else()
 set(ENV{JSONFORTRAN} "/home/u187784/High-Performance-Computing-236606/json-fortran/build")
-set(CMAKE_Fortran_FLAGS "-fPIC -cpp -fpp -O2 -qopenmp")
+set(CMAKE_Fortran_FLAGS "-fPIC -cpp -fpp -Ofast -qopenmp -xHost -ipo")
 #original flags: -fPIC -cpp -fpp -O2 -g -qopenmp  
 endif()
 

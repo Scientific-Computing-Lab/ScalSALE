@@ -1045,8 +1045,6 @@ contains
                               u5u8u1, u6u5u7, u6u7u2, u6u5u2, u7u6u8, u7u8u3, u7u6u3, &
                               u8u7u5, u8u5u4, u8u7u4
       real(8), intent(in) :: u1, u2, u3, u4, u5, u6, u7, u8  
-      !$omp declare target
-
       u1u2u4 = u1 + u2 + u4
       u1u4u5 = u1 + u4 + u5
       u1u2u5 = u1 + u2 + u5
@@ -1107,8 +1105,6 @@ contains
                 a4a3, a2a3, a7a3, b4b3, b2b3, b7b3, a1a4, a3a4, a8a4, b1b4, b3b4, b8b4, &
                 a8a5, a6a5, a1a5, b8b5, b6b5, b1b5, a5a6, a7a6, a2a6, b5b6, b7b6, b2b6, &
                 a6a7, a8a7, a3a7, b6b7, b8b7, b3b7, a7a8, a5a8, a4a8, b7b8, b5b8, b4b8
-      !$omp declare target
-      !8 11
       a2a1 = a2 - a1
       a4a1 = a4 - a1
       a5a1 = a5 - a1

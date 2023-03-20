@@ -749,10 +749,6 @@ contains
             call this%total_volume%    Point_to_data(vol_target)
             
             write(*,*) "Number of Available devices: ", omp_get_num_devices()
-            !$omp target enter data map(to: x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target) &
-            !$omp& map(alloc: dvel_x_dx_target, dvel_x_dy_target, dvel_x_dz_target, dvel_y_dx_target, dvel_y_dy_target, &
-            !$omp& dvel_y_dz_target, dvel_z_dx_target, dvel_z_dy_target, dvel_z_dz_target)
-        
             do while (this%time%Should_continue() .and. ncyc < max_ncyc)
                 start = omp_get_wtime()
                 call this%hydro%do_time_step_3d(this%time)
@@ -763,11 +759,6 @@ contains
                 write(*,*) "Cycle time: ", omp_get_wtime()-start
             !      call this%cr%Checkpoint(ckpt_name)
             end do
-            
-            !$omp target exit data map(delete: x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target) &
-            !$omp& map(from: dvel_x_dx_target, dvel_x_dy_target, dvel_x_dz_target, dvel_y_dx_target, dvel_y_dy_target,&
-            !$omp& dvel_y_dz_target, dvel_z_dx_target, dvel_z_dy_target, dvel_z_dz_target)
-            
         end if
 
         !print some cell quantities at the end of the calculation to help you debug your code.

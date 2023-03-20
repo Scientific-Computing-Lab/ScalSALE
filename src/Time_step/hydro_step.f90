@@ -376,8 +376,6 @@ contains
         call this%mesh%coordinates%Point_to_data(x_target, y_target, z_target)
         call this%total_vof%       Point_to_data(vof_target)
         call this%total_volume%    Point_to_data(vol_target)
-        !$omp target update to(x_target, y_target, z_target, velocity_x_target, velocity_y_target, velocity_z_target, vof_target, vol_target)
-        !TODO: optimize data movements
         
         call time%Calculate_dt(this%mesh, this%velocity, this%rezone%mesh_velocity, this%vertex_mass, this%total_vof, this%emfm)
 
@@ -1171,7 +1169,12 @@ contains
 
         time%dt_cour = 1d20
         call this%acceleration%Exchange_end()
-
+        
+        !not $omp parallel do schedule(guided) &
+        !not $omp   private(ip,jp,kp,avg_acc_x,avg_acc_y,avg_acc_z,tot_acc, &
+        !not $omp   x1,x2,x3,x4,x5,x6,x7,x8,y1,y2,y3,y4,y5,y6,y7,y8,z1,z2,z3,z4,z5,z6,z7,z8, &
+        !not $omp   x_avg,y_avg,z_avg,eff_vel_div,quad_visc_fac_temp,linear_visc_fac_temp,a_visc,dt_cour_temp, &
+        !not $omp   time)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -1258,10 +1261,6 @@ contains
                                 (avg_acc_x ** 2 + avg_acc_y ** 2 + avg_acc_z ** 2 + 1d-20)
                         end if
 
-
-
-
-
                         quad_visc_fac_temp   = quad_visc_fac
                         linear_visc_fac_temp = linear_visc_fac(i,j,k)
 
@@ -1285,11 +1284,10 @@ contains
                 end do
             end do
         end do
+        !not $omp end parallel do
 
         call this%a_visc%Exchange_virtual_space_nonblocking()
         time%dt_cour = sqrt(time%dt_cour) / time%dt_cour_fac
-
-
 
     end subroutine Calculate_artificial_viscosity_3d
 
@@ -2068,75 +2066,14 @@ contains
         cell_mass_vof_sum_arr = 0d0
         mat_vof_max_arr = 0
 
-            call this%materials%sie      %Point_to_data(sie_vof)
-            call this%materials%vof      %Point_to_data(mat_vof)
-            call this%materials%cell_mass%Point_to_data(cell_mass_vof)
-!        do tmp_mat = 1, this%nmats
-!
-!
-!            do k = 1, this%nz
-!                do j = 1, this%ny
-!                    do i = 1, this%nx
-!
-!                        if (vof(i, j, k) > emf1) then
-!                            vof(i, j, k) = 1d0
-!                        else if (vof(i, j, k) < this%emf) then
-!                            nmats_in_cell(i, j, k) = 0
-!                            vof(i, j, k) = 0d0
-!                        else if (from_interp_mesh /= 1) then
-!
-!                            vol_new   = mat_vol(i, j, k)
-!                            vol_ratio = vol(i, j, k) / vol_new
-!                            vof_old   = vof(i, j, k)
-!
-!                            if ((1d0 - 1d0 / vol_ratio) * (pressure(i, j, k) + a_visc(i, j, k)) > 0d0) then
-!                                if (vof(i, j, k) < emf1) vof(i, j, k) = vof(i, j, k) * vol_ratio
-!                                if (vof(i, j, k) > emf1) vof(i, j, k) = 1d0
-!                                vol_ratio = vof(i, j, k) / vof_old
-!                                if (mat_vof(i, j, k) < emf1) mat_vof(i, j, k) = mat_vof(i, j, k) * vol_ratio
-!                            end if
-!                        end if
-!
-!
-!                        if (mat_vof(i, j, k) > emf1) then
-!                            mat_vof      (i, j, k) = 1d0
-!                        else if (mat_vof(i, j, k) < this%emf) then
-!                            mat_vof      (i, j, k) = 0d0
-!                            cell_mass_vof(i, j, k) = 0d0
-!                            sie_vof      (i, j, k) = 0d0
-!                        end if
-!                        vof_sum_arr(i, j, k)            = vof_sum_arr(i, j, k)            + mat_vof(i, j, k)
-!                        sie_vof_sum_arr(i, j, k)        = sie_vof_sum_arr(i, j, k)        + sie_vof(i, j, k) * cell_mass_vof(i, j, k)
-!                        cell_mass_vof_sum_arr(i, j, k)  = cell_mass_vof_sum_arr(i, j, k)  + cell_mass_vof (i, j, k)
-!                        if (vof_max_arr(i, j, k) <= mat_vof(i, j, k)) then
-!                            vof_max_arr(i, j, k) = mat_vof(i, j, k)
-!                            mat_vof_max_arr(i, j, k) = tmp_mat
-!                        end if
-!
-!                    end do
-!                end do
-!            end do
-!        end do
-!
-!        do k = 1, this%nz
-!            do j = 1, this%ny
-!                do i = 1, this%nx
-!                    if (vof_sum_arr(i,j,k) /= vof(i,j,k)) then
-!                        call this%materials(mat_vof_max_arr(i,j,k))%vof%Point_to_data(mat_vof)
-!                        mat_vof(i, j, k) = mat_vof(i, j, k) + vof(i, j, k) - vof_sum_arr(i,j,k)
-!                    end if
-!
-!                    sie_tot = sie(i, j, k) * cell_mass(i, j, k)
-!                    if ((abs(sie_vof_sum_arr(i,j,k) - sie_tot) > 1d-4 * abs(sie_tot)) .and. (abs(sie_tot) > 1d-40)) then
-!                        sie(i, j, k) = sie_vof_sum_arr(i,j,k) / (cell_mass(i, j, k) + 1d-20)
-!                    end if
-!                end do
-!            end do
-!        end do
-call this%velocity%Calculate_derivatives(this%mesh%coordinates, &
-            this%total_vof, this%total_volume, this%nx, this%ny, this%nz, this%emf)
-call this%total_sie%exchange_end()
-call this%materials%sie%exchange_end()
+        call this%materials%sie      %Point_to_data(sie_vof)
+        call this%materials%vof      %Point_to_data(mat_vof)
+        call this%materials%cell_mass%Point_to_data(cell_mass_vof)
+
+        call this%velocity%Calculate_derivatives(this%mesh%coordinates, &
+                    this%total_vof, this%total_volume, this%nx, this%ny, this%nz, this%emf)
+        call this%total_sie%exchange_end()
+        call this%materials%sie%exchange_end()
 
         deallocate(vof_sum_arr)
         deallocate(vof_max_arr)

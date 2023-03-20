@@ -76,8 +76,6 @@ contains
       integer :: sw_vertex_mass
       integer                                         :: dimension
 
-
-
       if (.not. present(cyl_optional)) then
          cyl = 0d0
       else
@@ -97,79 +95,71 @@ contains
 
       if (dimension == 2) then
          call coordinates%Point_to_data(x, y)
-
          do j = 1, ny
-                  do i = 1, nx
-                     x_vert(1) = x(i    , j    , 1)
-                     x_vert(2) = x(i + 1, j    , 1)
-                     x_vert(3) = x(i + 1, j + 1, 1)
-                     x_vert(4) = x(i    , j + 1, 1)
-                     y_vert(1) = y(i    , j    , 1)
-                     y_vert(2) = y(i + 1, j    , 1)
-                     y_vert(3) = y(i + 1, j + 1, 1)
-                     y_vert(4) = y(i    , j + 1, 1)
-                     call Polygon_volume(4, x_vert, y_vert, vol(i, j, 1), cyl)
-                  end do
-               end do
-   else
-      call coordinates%Point_to_data(x, y, z)
-
-     is_neg = 0
-     nz = this%d3
-         do k = 1, nz
-            do j = 1, ny
-               do i = 1, nx
-                  ip = i + 1
-                  jp = j + 1
-                  kp = k + 1
-                  x1 = x(i , j , k  )
-                  x2 = x(ip, j , k  )
-                  x3 = x(ip, jp, k  )
-                  x4 = x(i , jp, k  )
-                  x5 = x(i , j , kp )
-                  x6 = x(ip, j , kp )
-                  x7 = x(ip, jp, kp )
-                  x8 = x(i , jp, kp )
-
-                  y1 = y(i , j , k )
-                  y2 = y(ip, j , k )
-                  y3 = y(ip, jp, k )
-                  y4 = y(i , jp, k )
-                  y5 = y(i , j , kp)
-                  y6 = y(ip, j , kp)
-                  y7 = y(ip, jp, kp)
-                  y8 = y(i , jp, kp)
-
-                  z1 = z(i , j , k  )
-                  z2 = z(ip, j , k  )
-                  z3 = z(ip, jp, k  )
-                  z4 = z(i , jp, k  )
-                  z5 = z(i , j , kp)
-                  z6 = z(ip, j , kp)
-                  z7 = z(ip, jp, kp)
-                  z8 = z(i , jp, kp)
-
-                  vol(i, j, k) = (-x_proj(y2, z2, y3, z3, y4, z4, y5, z5, y6, z6, y8, z8) * x1 &
-                                  -x_proj(y3, z3, y4, z4, y1, z1, y6, z6, y7, z7, y5, z5) * x2 &
-                                  -x_proj(y4, z4, y1, z1, y2, z2, y7, z7, y8, z8, y6, z6) * x3 &
-                                  -x_proj(y1, z1, y2, z2, y3, z3, y8, z8, y5, z5, y7, z7) * x4 &
-                                  +x_proj(y6, z6, y7, z7, y8, z8, y1, z1, y2, z2, y4, z4) * x5 &
-                                  +x_proj(y7, z7, y8, z8, y5, z5, y2, z2, y3, z3, y1, z1) * x6 &
-                                  +x_proj(y8, z8, y5, z5, y6, z6, y3, z3, y4, z4, y2, z2) * x7 &
-                                  +x_proj(y5, z5, y6, z6, y7, z7, y4, z4, y1, z1, y3, z3) * x8 ) / 12d0
-
-
-
-               end do
+            do i = 1, nx
+               x_vert(1) = x(i    , j    , 1)
+               x_vert(2) = x(i + 1, j    , 1)
+               x_vert(3) = x(i + 1, j + 1, 1)
+               x_vert(4) = x(i    , j + 1, 1)
+               y_vert(1) = y(i    , j    , 1)
+               y_vert(2) = y(i + 1, j    , 1)
+               y_vert(3) = y(i + 1, j + 1, 1)
+               y_vert(4) = y(i    , j + 1, 1)
+               call Polygon_volume(4, x_vert, y_vert, vol(i, j, 1), cyl)
             end do
          end do
+   else
+      call coordinates%Point_to_data(x, y, z)
+      is_neg = 0
+      nz = this%d3
+      call omp_set_num_threads(24)
+      !$omp parallel do schedule(guided) private(ip,jp,kp,x1,x2,x3,x4,x5,x6,x7,x8,y1,y2,y3,y4,y5,y6,y7,y8,z1,z2,z3,z4,z5,z6,z7,z8)
+      do k = 1, nz
+         do j = 1, ny
+            do i = 1, nx
+               ip = i + 1
+               jp = j + 1
+               kp = k + 1
+               x1 = x(i , j , k  )
+               x2 = x(ip, j , k  )
+               x3 = x(ip, jp, k  )
+               x4 = x(i , jp, k  )
+               x5 = x(i , j , kp )
+               x6 = x(ip, j , kp )
+               x7 = x(ip, jp, kp )
+               x8 = x(i , jp, kp )
 
+               y1 = y(i , j , k )
+               y2 = y(ip, j , k )
+               y3 = y(ip, jp, k )
+               y4 = y(i , jp, k )
+               y5 = y(i , j , kp)
+               y6 = y(ip, j , kp)
+               y7 = y(ip, jp, kp)
+               y8 = y(i , jp, kp)
 
+               z1 = z(i , j , k  )
+               z2 = z(ip, j , k  )
+               z3 = z(ip, jp, k  )
+               z4 = z(i , jp, k  )
+               z5 = z(i , j , kp)
+               z6 = z(ip, j , kp)
+               z7 = z(ip, jp, kp)
+               z8 = z(i , jp, kp)
 
-
-
-
-      end if
+               vol(i, j, k) = (-x_proj(y2, z2, y3, z3, y4, z4, y5, z5, y6, z6, y8, z8) * x1 &
+                                 -x_proj(y3, z3, y4, z4, y1, z1, y6, z6, y7, z7, y5, z5) * x2 &
+                                 -x_proj(y4, z4, y1, z1, y2, z2, y7, z7, y8, z8, y6, z6) * x3 &
+                                 -x_proj(y1, z1, y2, z2, y3, z3, y8, z8, y5, z5, y7, z7) * x4 &
+                                 +x_proj(y6, z6, y7, z7, y8, z8, y1, z1, y2, z2, y4, z4) * x5 &
+                                 +x_proj(y7, z7, y8, z8, y5, z5, y2, z2, y3, z3, y1, z1) * x6 &
+                                 +x_proj(y8, z8, y5, z5, y6, z6, y3, z3, y4, z4, y2, z2) * x7 &
+                                 +x_proj(y5, z5, y6, z6, y7, z7, y4, z4, y1, z1, y3, z3) * x8 ) / 12d0
+            end do
+         end do
+      end do
+      !$omp end parallel do
+   end if
    end subroutine Calculate
 
    subroutine Clean_volume (this)

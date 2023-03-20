@@ -13,6 +13,14 @@ program main
 
     character(:), allocatable :: arg
     integer :: arglen, stat
+
+    integer :: cnt
+
+    ! call omp_set_num_threads(24)
+    !not !$omp parallel
+    !not     cnt = cnt+1
+    !not !$omp end parallel
+    !not write (*,*) "max threads is ", cnt, " threads"
     call get_command_argument(number=1, length=arglen)  ! Assume for simplicity success
     if (arglen == 0) then
         df_obj = datafile_t("../Datafiles/datafile.json")
