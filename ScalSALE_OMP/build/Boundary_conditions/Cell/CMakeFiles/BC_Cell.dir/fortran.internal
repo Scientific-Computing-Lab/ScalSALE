@@ -1,0 +1,7 @@
+# The fortran modules provided by this target.
+provides
+ cell_boundary_condition_module.mod
+ free_surface_module.mod
+ lagrange_surface_cell_module.mod
+ slip_cell_3d_module.mod
+ slip_cell_module.mod

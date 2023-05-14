@@ -1,0 +1,4 @@
+# The fortran modules provided by this target.
+provides
+ equation_of_state_module.mod
+ ideal_gas_module.mod

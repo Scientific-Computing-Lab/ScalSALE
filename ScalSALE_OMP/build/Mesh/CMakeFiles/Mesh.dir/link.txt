@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../archive/libMesh.a CMakeFiles/Mesh.dir/mesh_base.f90.o CMakeFiles/Mesh.dir/mesh.f90.o CMakeFiles/Mesh.dir/mesh_3d.f90.o
+/usr/bin/ranlib ../archive/libMesh.a

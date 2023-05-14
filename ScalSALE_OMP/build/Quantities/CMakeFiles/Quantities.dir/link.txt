@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../archive/libQuantities.a CMakeFiles/Quantities.dir/quantity.f90.o
+/usr/bin/ranlib ../archive/libQuantities.a

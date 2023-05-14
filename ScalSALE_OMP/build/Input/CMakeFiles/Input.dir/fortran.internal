@@ -1,0 +1,5 @@
+# The fortran modules provided by this target.
+provides
+ datafile_module.mod
+ defaults_module.mod
+ replace_words_module.mod

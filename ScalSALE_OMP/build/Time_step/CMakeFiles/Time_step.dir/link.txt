@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../archive/libTime_step.a CMakeFiles/Time_step.dir/hydro_step.f90.o CMakeFiles/Time_step.dir/time.f90.o
+/usr/bin/ranlib ../archive/libTime_step.a

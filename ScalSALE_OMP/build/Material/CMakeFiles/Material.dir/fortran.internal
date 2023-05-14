@@ -1,0 +1,5 @@
+# The fortran modules provided by this target.
+provides
+ material_advect_module.mod
+ material_base_module.mod
+ material_module.mod

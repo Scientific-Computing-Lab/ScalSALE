@@ -1,0 +1,6 @@
+# The fortran modules provided by this target.
+provides
+ communication_module.mod
+ communication_parameters_module.mod
+ communication_utils_module.mod
+ parallel_parameters_module.mod

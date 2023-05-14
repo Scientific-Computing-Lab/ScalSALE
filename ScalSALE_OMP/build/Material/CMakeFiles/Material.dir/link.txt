@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../archive/libMaterial.a CMakeFiles/Material.dir/material_base.f90.o CMakeFiles/Material.dir/material_advect.f90.o CMakeFiles/Material.dir/material.f90.o
+/usr/bin/ranlib ../archive/libMaterial.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../archive/libQ_Vertex.a CMakeFiles/Q_Vertex.dir/vertex_quantity.f90.o CMakeFiles/Q_Vertex.dir/acceleration.f90.o CMakeFiles/Q_Vertex.dir/velocity.f90.o CMakeFiles/Q_Vertex.dir/momentum.f90.o CMakeFiles/Q_Vertex.dir/vertex_mass.f90.o CMakeFiles/Q_Vertex.dir/coordinates.f90.o
+/usr/bin/ranlib ../../archive/libQ_Vertex.a

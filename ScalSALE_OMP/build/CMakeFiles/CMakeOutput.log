@@ -1,0 +1,665 @@
+The system is: Linux - 3.10.0-1160.25.1.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/sw/gcc/9.1.0/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/3.25.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/sw/gcc/9.1.0/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/3.25.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-GRIJGh
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2ff08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2ff08.dir/build.make CMakeFiles/cmTC_2ff08.dir/build
+gmake[1]: Entering directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-GRIJGh'
+Building C object CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o
+/opt/sw/gcc/9.1.0/bin/gcc   -v -o CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -c /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/gcc
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c,c++,fortran,lto --prefix=/opt/sw/gcc/9.1.0
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccmlZJ5t.s
+GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include
+ /usr/local/include
+ /opt/sw/gcc/9.1.0/include
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: e2ebb2cf10c66244c3b0afc0bd3a52c2
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o /tmp/ccmlZJ5t.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_2ff08
+/opt/sw/cmake/3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ff08.dir/link.txt --verbose=1
+/opt/sw/gcc/9.1.0/bin/gcc  -v CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -o cmTC_2ff08 
+Using built-in specs.
+COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c,c++,fortran,lto --prefix=/opt/sw/gcc/9.1.0
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ff08' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDPVEDw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2ff08 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ff08' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-GRIJGh'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+    add: [/usr/local/include]
+    add: [/opt/sw/gcc/9.1.0/include]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/sw/gcc/9.1.0/include] ==> [/opt/sw/gcc/9.1.0/include]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include;/usr/local/include;/opt/sw/gcc/9.1.0/include;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-GRIJGh]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2ff08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2ff08.dir/build.make CMakeFiles/cmTC_2ff08.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-GRIJGh']
+  ignore line: [Building C object CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/sw/gcc/9.1.0/bin/gcc   -v -o CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -c /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/gcc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c c++ fortran lto --prefix=/opt/sw/gcc/9.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccmlZJ5t.s]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/sw/gcc/9.1.0/include]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: e2ebb2cf10c66244c3b0afc0bd3a52c2]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o /tmp/ccmlZJ5t.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_2ff08]
+  ignore line: [/opt/sw/cmake/3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ff08.dir/link.txt --verbose=1]
+  ignore line: [/opt/sw/gcc/9.1.0/bin/gcc  -v CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -o cmTC_2ff08 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c c++ fortran lto --prefix=/opt/sw/gcc/9.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2ff08' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDPVEDw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2ff08 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccDPVEDw.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2ff08] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o] ==> obj [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..]
+    arg [CMakeFiles/cmTC_2ff08.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o] ==> obj [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64] ==> [/opt/sw/gcc/9.1.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> [/opt/sw/gcc/9.1.0/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0;/opt/sw/gcc/9.1.0/lib64;/lib64;/usr/lib64;/opt/sw/gcc/9.1.0/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-b6qycj
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a96d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a96d.dir/build.make CMakeFiles/cmTC_6a96d.dir/build
+gmake[1]: Entering directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-b6qycj'
+Building CXX object CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o
+/opt/sw/gcc/9.1.0/bin/g++   -v -o CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c,c++,fortran,lto --prefix=/opt/sw/gcc/9.1.0
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccX3muV0.s
+GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/x86_64-pc-linux-gnu
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include
+ /usr/local/include
+ /opt/sw/gcc/9.1.0/include
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 5ec7867492a2ebd023ed5408fa24608a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccX3muV0.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_6a96d
+/opt/sw/cmake/3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a96d.dir/link.txt --verbose=1
+/opt/sw/gcc/9.1.0/bin/g++  -v CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6a96d 
+Using built-in specs.
+COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/g++
+COLLECT_LTO_WRAPPER=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c,c++,fortran,lto --prefix=/opt/sw/gcc/9.1.0
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a96d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccA0tCUc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6a96d /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a96d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-b6qycj'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/x86_64-pc-linux-gnu]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+    add: [/usr/local/include]
+    add: [/opt/sw/gcc/9.1.0/include]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0] ==> [/opt/sw/gcc/9.1.0/include/c++/9.1.0]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/x86_64-pc-linux-gnu] ==> [/opt/sw/gcc/9.1.0/include/c++/9.1.0/x86_64-pc-linux-gnu]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward] ==> [/opt/sw/gcc/9.1.0/include/c++/9.1.0/backward]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/sw/gcc/9.1.0/include] ==> [/opt/sw/gcc/9.1.0/include]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/sw/gcc/9.1.0/include/c++/9.1.0;/opt/sw/gcc/9.1.0/include/c++/9.1.0/x86_64-pc-linux-gnu;/opt/sw/gcc/9.1.0/include/c++/9.1.0/backward;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include;/usr/local/include;/opt/sw/gcc/9.1.0/include;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-b6qycj]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a96d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a96d.dir/build.make CMakeFiles/cmTC_6a96d.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-b6qycj']
+  ignore line: [Building CXX object CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/sw/gcc/9.1.0/bin/g++   -v -o CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/g++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c c++ fortran lto --prefix=/opt/sw/gcc/9.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccX3muV0.s]
+  ignore line: [GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/x86_64-pc-linux-gnu]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/sw/gcc/9.1.0/include]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 5ec7867492a2ebd023ed5408fa24608a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccX3muV0.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_6a96d]
+  ignore line: [/opt/sw/cmake/3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a96d.dir/link.txt --verbose=1]
+  ignore line: [/opt/sw/gcc/9.1.0/bin/g++  -v CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6a96d ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/sw/gcc/9.1.0/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c c++ fortran lto --prefix=/opt/sw/gcc/9.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a96d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccA0tCUc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6a96d /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccA0tCUc.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_6a96d] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o] ==> obj [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..]
+    arg [CMakeFiles/cmTC_6a96d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o] ==> obj [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64] ==> [/opt/sw/gcc/9.1.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> [/opt/sw/gcc/9.1.0/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0;/opt/sw/gcc/9.1.0/lib64;/lib64;/usr/lib64;/opt/sw/gcc/9.1.0/lib]
+  implicit fwks: []
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Driving: /opt/sw/gcc/9.1.0-fix//bin/gfortran -v CMakeFortranCompilerId.F -I/opt/sw/openmpi/v4/4.1.3/gnu/include -pthread -I/opt/sw/openmpi/v4/4.1.3/gnu/lib -L/opt/sw/openmpi/v4/4.1.3/gnu/lib -Wl,-rpath -Wl,/opt/sw/openmpi/v4/4.1.3/gnu/lib -Wl,--enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/sw/gcc/9.1.0-fix//bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c,c++,fortran,lto --prefix=/opt/sw/gcc/9.1.0
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccPOL9b0.f90 -quiet -v -I /opt/sw/openmpi/v4/4.1.3/gnu/include -I /opt/sw/openmpi/v4/4.1.3/gnu/lib -D_REENTRANT CMakeFortranCompilerId.F -quiet -dumpbase CMakeFortranCompilerId.F -mtune=generic -march=x86-64 -auxbase CMakeFortranCompilerId -version -fintrinsic-modules-path /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude -o /tmp/ccy9kMi4.s
+GNU Fortran (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/sw/openmpi/v4/4.1.3/gnu/include
+ /opt/sw/openmpi/v4/4.1.3/gnu/lib
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include
+ /usr/local/include
+ /opt/sw/gcc/9.1.0/include
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v -I /opt/sw/openmpi/v4/4.1.3/gnu/include -I /opt/sw/openmpi/v4/4.1.3/gnu/lib --64 -o /tmp/cc9GUpt8.o /tmp/ccy9kMi4.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+Reading specs from /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccofaaKc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/opt/sw/openmpi/v4/4.1.3/gnu/lib -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. /tmp/cc9GUpt8.o -rpath /opt/sw/openmpi/v4/4.1.3/gnu/lib --enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/3.25.1/CompilerIdFortran/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-cL1aeo
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_efc7a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_efc7a.dir/build.make CMakeFiles/cmTC_efc7a.dir/build
+gmake[1]: Entering directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-cL1aeo'
+Building Fortran object CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o
+/opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90   -v -c /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o
+Using built-in specs.
+COLLECT_GCC=/opt/sw/gcc/9.1.0-fix//bin/gfortran
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c,c++,fortran,lto --prefix=/opt/sw/gcc/9.1.0
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/f951 /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccfmqqcu.f90 -quiet -v -I /opt/sw/openmpi/v4/4.1.3/gnu/include -I /opt/sw/openmpi/v4/4.1.3/gnu/lib -D_REENTRANT /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpbase CMakeFortranCompilerABI.F90 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -version -fintrinsic-modules-path /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude -o /tmp/ccPF3pFD.s
+GNU Fortran (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/sw/openmpi/v4/4.1.3/gnu/include
+ /opt/sw/openmpi/v4/4.1.3/gnu/lib
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include
+ /usr/local/include
+ /opt/sw/gcc/9.1.0/include
+ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 5.4.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-mtune=generic' '-march=x86-64'
+ as -v -I /opt/sw/openmpi/v4/4.1.3/gnu/include -I /opt/sw/openmpi/v4/4.1.3/gnu/lib --64 -o CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o /tmp/ccPF3pFD.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-mtune=generic' '-march=x86-64'
+Linking Fortran executable cmTC_efc7a
+/opt/sw/cmake/3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efc7a.dir/link.txt --verbose=1
+/opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90  -v CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -o cmTC_efc7a 
+Driving: /opt/sw/gcc/9.1.0-fix//bin/gfortran -v CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -o cmTC_efc7a -I/opt/sw/openmpi/v4/4.1.3/gnu/include -pthread -I/opt/sw/openmpi/v4/4.1.3/gnu/lib -L/opt/sw/openmpi/v4/4.1.3/gnu/lib -Wl,-rpath -Wl,/opt/sw/openmpi/v4/4.1.3/gnu/lib -Wl,--enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/sw/gcc/9.1.0-fix//bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c,c++,fortran,lto --prefix=/opt/sw/gcc/9.1.0
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+Reading specs from /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_efc7a' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_efc7a' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchG5ANv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_efc7a /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/opt/sw/openmpi/v4/4.1.3/gnu/lib -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -rpath /opt/sw/openmpi/v4/4.1.3/gnu/lib --enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_efc7a' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-cL1aeo'
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/sw/openmpi/v4/4.1.3/gnu/include]
+    add: [/opt/sw/openmpi/v4/4.1.3/gnu/lib]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+    add: [/usr/local/include]
+    add: [/opt/sw/gcc/9.1.0/include]
+    add: [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/sw/openmpi/v4/4.1.3/gnu/include] ==> [/opt/sw/openmpi/v4/4.1.3/gnu/include]
+  collapse include dir [/opt/sw/openmpi/v4/4.1.3/gnu/lib] ==> [/opt/sw/openmpi/v4/4.1.3/gnu/lib]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/sw/gcc/9.1.0/include] ==> [/opt/sw/gcc/9.1.0/include]
+  collapse include dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/sw/openmpi/v4/4.1.3/gnu/include;/opt/sw/openmpi/v4/4.1.3/gnu/lib;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include;/usr/local/include;/opt/sw/gcc/9.1.0/include;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed;/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-cL1aeo]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_efc7a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_efc7a.dir/build.make CMakeFiles/cmTC_efc7a.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/CMakeScratch/TryCompile-cL1aeo']
+  ignore line: [Building Fortran object CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o]
+  ignore line: [/opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90   -v -c /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/sw/gcc/9.1.0-fix//bin/gfortran]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c c++ fortran lto --prefix=/opt/sw/gcc/9.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/f951 /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccfmqqcu.f90 -quiet -v -I /opt/sw/openmpi/v4/4.1.3/gnu/include -I /opt/sw/openmpi/v4/4.1.3/gnu/lib -D_REENTRANT /opt/sw/cmake/3.25.1/share/cmake-3.25/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpbase CMakeFortranCompilerABI.F90 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -version -fintrinsic-modules-path /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude -o /tmp/ccPF3pFD.s]
+  ignore line: [GNU Fortran (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/sw/openmpi/v4/4.1.3/gnu/include]
+  ignore line: [ /opt/sw/openmpi/v4/4.1.3/gnu/lib]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/sw/gcc/9.1.0/include]
+  ignore line: [ /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU Fortran2008 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 5.4.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v -I /opt/sw/openmpi/v4/4.1.3/gnu/include -I /opt/sw/openmpi/v4/4.1.3/gnu/lib --64 -o CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o /tmp/ccPF3pFD.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking Fortran executable cmTC_efc7a]
+  ignore line: [/opt/sw/cmake/3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efc7a.dir/link.txt --verbose=1]
+  ignore line: [/opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90  -v CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -o cmTC_efc7a ]
+  ignore line: [Driving: /opt/sw/gcc/9.1.0-fix//bin/gfortran -v CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -o cmTC_efc7a -I/opt/sw/openmpi/v4/4.1.3/gnu/include -pthread -I/opt/sw/openmpi/v4/4.1.3/gnu/lib -L/opt/sw/openmpi/v4/4.1.3/gnu/lib -Wl -rpath -Wl /opt/sw/openmpi/v4/4.1.3/gnu/lib -Wl --enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -l gfortran -l m -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/sw/gcc/9.1.0-fix//bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-9.1.0/configure --enable-offload-targets=nvptx-none --with-cuda-driver-include=/usr/local/cuda-10.0/include --with-cuda-driver-lib=/usr/local/cuda-10.0/lib64 --disable-bootstrap --disable-multilib --enable-languages=c c++ fortran lto --prefix=/opt/sw/gcc/9.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [Reading specs from /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_efc7a' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [COMPILER_PATH=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_efc7a' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/include' '-pthread' '-I' '/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-L/opt/sw/openmpi/v4/4.1.3/gnu/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchG5ANv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_efc7a /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/opt/sw/openmpi/v4/4.1.3/gnu/lib -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o -rpath /opt/sw/openmpi/v4/4.1.3/gnu/lib --enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/sw/gcc/9.1.0/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cchG5ANv.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_efc7a] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o] ==> obj [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o]
+    arg [-L/opt/sw/openmpi/v4/4.1.3/gnu/lib] ==> dir [/opt/sw/openmpi/v4/4.1.3/gnu/lib]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..]
+    arg [CMakeFiles/cmTC_efc7a.dir/CMakeFortranCompilerABI.F90.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/opt/sw/openmpi/v4/4.1.3/gnu/lib] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-lmpi_usempif08] ==> lib [mpi_usempif08]
+    arg [-lmpi_usempi_ignore_tkr] ==> lib [mpi_usempi_ignore_tkr]
+    arg [-lmpi_mpifh] ==> lib [mpi_mpifh]
+    arg [-lmpi] ==> lib [mpi]
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o] ==> obj [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/opt/sw/openmpi/v4/4.1.3/gnu/lib] ==> [/opt/sw/openmpi/v4/4.1.3/gnu/lib]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0] ==> [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64] ==> [/opt/sw/gcc/9.1.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> [/opt/sw/gcc/9.1.0/lib]
+  implicit libs: [mpi_usempif08;mpi_usempi_ignore_tkr;mpi_mpifh;mpi;gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/opt/sw/openmpi/v4/4.1.3/gnu/lib;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0;/opt/sw/gcc/9.1.0/lib64;/lib64;/usr/lib64;/opt/sw/gcc/9.1.0/lib]
+  implicit fwks: []
+
+

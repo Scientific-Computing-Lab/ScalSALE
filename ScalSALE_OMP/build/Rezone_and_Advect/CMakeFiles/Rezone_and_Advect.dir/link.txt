@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../archive/libRezone_and_Advect.a CMakeFiles/Rezone_and_Advect.dir/advect.f90.o CMakeFiles/Rezone_and_Advect.dir/rezone.f90.o
+/usr/bin/ranlib ../archive/libRezone_and_Advect.a

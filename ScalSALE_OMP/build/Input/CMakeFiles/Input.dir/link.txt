@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../archive/libInput.a CMakeFiles/Input.dir/replace_words.f90.o CMakeFiles/Input.dir/defaults.f90.o CMakeFiles/Input.dir/datafile_object.f90.o
+/usr/bin/ranlib ../archive/libInput.a

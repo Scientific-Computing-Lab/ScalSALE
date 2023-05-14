@@ -1,0 +1,15 @@
+# The fortran modules provided by this target.
+provides
+ artificial_viscosity_module.mod
+ cell_mass_module.mod
+ cell_quantity_module.mod
+ density_module.mod
+ energy_module.mod
+ material_quantity_module.mod
+ materials_in_cells_module.mod
+ num_materials_in_cells_module.mod
+ pressure_module.mod
+ sound_velocity_module.mod
+ temperature_module.mod
+ vof_module.mod
+ volume_module.mod

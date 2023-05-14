@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../archive/libBC_Cell.a CMakeFiles/BC_Cell.dir/slip_cell.f90.o CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.o CMakeFiles/BC_Cell.dir/free_surface.f90.o CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.o CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.o
+/usr/bin/ranlib ../../archive/libBC_Cell.a

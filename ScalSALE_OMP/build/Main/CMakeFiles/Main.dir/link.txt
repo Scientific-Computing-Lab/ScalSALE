@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../archive/libMain.a CMakeFiles/Main.dir/problem.f90.o
+/usr/bin/ranlib ../archive/libMain.a

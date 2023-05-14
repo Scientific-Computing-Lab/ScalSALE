@@ -1,0 +1,302 @@
+{
+    "cell_set": {
+        "mesh_type": "pyramid", 
+        "boundary_conditions": [
+            2, 
+            2, 
+            2, 
+            2,
+            2,
+            2
+        ]
+    },
+ "diagnostics": {
+        "number_diagnostics": 1,
+        "group": [
+            {
+                "condition": 1,
+                "diagnostic": [  
+                    {
+                        "type": "text",
+                        "variables": ["velocity_x", "velocity_y","velocity_z","position_x", "position_y", "position_z", "pressure", "density", "SIE", "time", "index"]
+                    }
+                ]
+            }
+        ]
+    },
+    "Be": {
+        "A": 4.0, 
+        "index": 1, 
+        "Z_2": 4.0, 
+        "gamma_gas": 1.667, 
+        "rho_0": 1.0, 
+        "Z": 2.0, 
+        "eos_type": "ideal"
+    }, 
+    "Al": {
+        "A": 4.0, 
+        "index": 2, 
+        "Z_2": 4.0, 
+        "gamma_gas": 1.667, 
+        "rho_0": 2.0, 
+        "Z": 2.0, 
+        "eos_type": "ideal"
+    }, 
+    "Cu": {
+        "A": 4.0, 
+        "index": 2, 
+        "Z_2": 4.0, 
+        "gamma_gas": 1.667, 
+        "rho_0": 1.5, 
+        "Z": 2.0, 
+        "eos_type": "ideal"
+    }, 
+    "switches": {
+        "sw_symmetry": 0, 
+        "sw_vert_mass": 1, 
+        "sw_nraz": 1
+    }, 
+    "contours": {
+        "contours_j": [
+            {
+                "units": "pi", 
+                "phi0": 1.0
+            }, 
+            {
+                "units": "pi", 
+                "phi0": 0.99999
+            }
+        ],
+        "contours_k": [
+            {
+                "units": "pi", 
+                "phi0": 1.0
+            }, 
+            {
+                "units": "pi", 
+                "phi0": 0.99999
+            }
+        ], 
+        "contours_i": [
+            {
+                "a": 0.001, 
+                "b": 0.001, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 8.84, 
+                "b": 8.84, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 8.895, 
+                "b": 8.895, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 9.0, 
+                "b": 9.0, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 9.2, 
+                "b": 9.2, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 9.45, 
+                "b": 9.45, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 11.8, 
+                "b": 11.8, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 11.975, 
+                "b": 11.975, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            },
+            {
+                "a": 16.4, 
+                "b": 16.4, 
+                "c": 2.0, 
+                "d": 2.0,
+                "e": 0.0,
+                "f": 0.0,
+                "y1": 1.0, 
+                "x1": 0.0,
+                "y2": "teta",
+                "x2": "PI", 
+                "contour_type": "elipse"
+            }
+        ]
+    }, 
+    "zone": {
+        "zone_i": [
+            {
+                "type": "constant", 
+                "dr": 0.0
+            },
+            {
+                "type": "geometry_first", 
+                "dr": 0.001
+            },
+            {
+                "type": "geometry_first", 
+                "dr": -1.0
+            },
+            {
+                "type": "constant", 
+                "dr": -1.0
+            },
+            {
+                "type": "constant", 
+                "dr": -3.0
+            },
+            {
+                "type": "constant", 
+                "dr": 0.01
+            },
+            {
+                "type": "constant", 
+                "dr": 0.01
+            },
+            {
+                "type": "constant", 
+                "dr": 0.01
+            }            
+        ], 
+        "zone_j": [
+            {
+                "d_theta": 0.0, 
+                "type": "constant"
+            }
+        ],
+        "zone_k": [
+            {
+                "d_phi": 0.0, 
+                "type": "constant"
+            }
+        ]
+    }, 
+    "layers_materials": {
+        "number_layers_j": 8, 
+        "number_cells_j": [
+            30,
+            20,
+            20,
+            XX,
+            20,
+            80,
+            16,
+            XXX
+        ], 
+        "number_layers_k":1, 
+        "number_cells_k": [
+            10
+        ], 
+        "number_layers_i": 1, 
+        "number_cells_i": [
+	    	10
+        ], 
+        "materials": [
+            "Be", 
+            "Al",
+            "Al",
+            "Al",
+            "Al",
+            "Al",
+            "Al",
+            "Cu"
+        ]
+    }, 
+    "data": {
+	"nxb": 1,
+        "name": "sod_3d", 
+	"nyb": 1,
+	"nzb":1
+	
+    }, 
+    "simulation_parameters": {
+        "time_final": 0.2, 
+        "init_temperature": 3.22e-08, 
+        "dt": 1e-14, 
+	"cyl": 0,
+        "dt_max": 0.1
+    },
+    "rezone_advect": {
+        "rezone_type": "lagrange"
+    },
+    "parallel": {
+	"np": 1,
+	"npx":1,
+	"npy":1,
+	"npz":1
+    }
+}

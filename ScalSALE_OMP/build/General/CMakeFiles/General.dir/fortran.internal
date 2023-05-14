@@ -1,0 +1,7 @@
+# The fortran modules provided by this target.
+provides
+ constants_module.mod
+ data_4d_module.mod
+ data_module.mod
+ general_utils_module.mod
+ geometry_module.mod

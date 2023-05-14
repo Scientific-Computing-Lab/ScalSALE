@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../archive/libEOS.a CMakeFiles/EOS.dir/equation_of_state.f90.o CMakeFiles/EOS.dir/ideal_gas.f90.o
+/usr/bin/ranlib ../../archive/libEOS.a
