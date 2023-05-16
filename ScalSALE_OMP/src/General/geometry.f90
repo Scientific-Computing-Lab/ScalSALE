@@ -1081,7 +1081,6 @@ contains
    subroutine Vector_grad_planes(a1, a2, a3, a4, a5, a6, a7, a8, &
                                  b1, b2, b3, b4, b5, b6, b7, b8, tmp_arr)
       implicit none
-            !$omp declare target
 
       real(8), dimension(24), intent(out) :: tmp_arr
       
@@ -1092,7 +1091,7 @@ contains
                 a4a3, a2a3, a7a3, b4b3, b2b3, b7b3, a1a4, a3a4, a8a4, b1b4, b3b4, b8b4, &
                 a8a5, a6a5, a1a5, b8b5, b6b5, b1b5, a5a6, a7a6, a2a6, b5b6, b7b6, b2b6, &
                 a6a7, a8a7, a3a7, b6b7, b8b7, b3b7, a7a8, a5a8, a4a8, b7b8, b5b8, b4b8
-
+     !$omp declare target
       a2a1 = a2 - a1
       a4a1 = a4 - a1
       a5a1 = a5 - a1

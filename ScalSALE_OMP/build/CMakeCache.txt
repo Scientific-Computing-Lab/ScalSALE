@@ -113,7 +113,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles/pkgRedirects
 
 //Fortran compiler
-CMAKE_Fortran_COMPILER:FILEPATH=/opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90
+CMAKE_Fortran_COMPILER:FILEPATH=/opt/sw/openmpi/2.1.0/bin/mpif90
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler

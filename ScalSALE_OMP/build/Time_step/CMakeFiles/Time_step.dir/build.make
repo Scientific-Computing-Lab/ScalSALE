@@ -72,28 +72,28 @@ include Time_step/CMakeFiles/Time_step.dir/flags.make
 Time_step/CMakeFiles/Time_step.dir/hydro_step.f90.o: Time_step/CMakeFiles/Time_step.dir/flags.make
 Time_step/CMakeFiles/Time_step.dir/hydro_step.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/hydro_step.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object Time_step/CMakeFiles/Time_step.dir/hydro_step.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/hydro_step.f90 -o CMakeFiles/Time_step.dir/hydro_step.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/hydro_step.f90 -o CMakeFiles/Time_step.dir/hydro_step.f90.o
 
 Time_step/CMakeFiles/Time_step.dir/hydro_step.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Time_step.dir/hydro_step.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/hydro_step.f90 > CMakeFiles/Time_step.dir/hydro_step.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/hydro_step.f90 > CMakeFiles/Time_step.dir/hydro_step.f90.i
 
 Time_step/CMakeFiles/Time_step.dir/hydro_step.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Time_step.dir/hydro_step.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/hydro_step.f90 -o CMakeFiles/Time_step.dir/hydro_step.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/hydro_step.f90 -o CMakeFiles/Time_step.dir/hydro_step.f90.s
 
 Time_step/CMakeFiles/Time_step.dir/time.f90.o: Time_step/CMakeFiles/Time_step.dir/flags.make
 Time_step/CMakeFiles/Time_step.dir/time.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/time.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object Time_step/CMakeFiles/Time_step.dir/time.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/time.f90 -o CMakeFiles/Time_step.dir/time.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/time.f90 -o CMakeFiles/Time_step.dir/time.f90.o
 
 Time_step/CMakeFiles/Time_step.dir/time.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Time_step.dir/time.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/time.f90 > CMakeFiles/Time_step.dir/time.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/time.f90 > CMakeFiles/Time_step.dir/time.f90.i
 
 Time_step/CMakeFiles/Time_step.dir/time.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Time_step.dir/time.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/time.f90 -o CMakeFiles/Time_step.dir/time.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Time_step && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Time_step/time.f90 -o CMakeFiles/Time_step.dir/time.f90.s
 
 # Object files for target Time_step
 Time_step_OBJECTS = \

@@ -72,67 +72,67 @@ include Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/flags.make
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell.f90.o: Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/flags.make
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell.f90 -o CMakeFiles/BC_Cell.dir/slip_cell.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell.f90 -o CMakeFiles/BC_Cell.dir/slip_cell.f90.o
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/BC_Cell.dir/slip_cell.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell.f90 > CMakeFiles/BC_Cell.dir/slip_cell.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell.f90 > CMakeFiles/BC_Cell.dir/slip_cell.f90.i
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/BC_Cell.dir/slip_cell.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell.f90 -o CMakeFiles/BC_Cell.dir/slip_cell.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell.f90 -o CMakeFiles/BC_Cell.dir/slip_cell.f90.s
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.o: Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/flags.make
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell_3d.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell_3d.f90 -o CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell_3d.f90 -o CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.o
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell_3d.f90 > CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell_3d.f90 > CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.i
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell_3d.f90 -o CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/slip_cell_3d.f90 -o CMakeFiles/BC_Cell.dir/slip_cell_3d.f90.s
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/free_surface.f90.o: Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/flags.make
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/free_surface.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/free_surface.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/free_surface.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/free_surface.f90 -o CMakeFiles/BC_Cell.dir/free_surface.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/free_surface.f90 -o CMakeFiles/BC_Cell.dir/free_surface.f90.o
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/free_surface.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/BC_Cell.dir/free_surface.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/free_surface.f90 > CMakeFiles/BC_Cell.dir/free_surface.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/free_surface.f90 > CMakeFiles/BC_Cell.dir/free_surface.f90.i
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/free_surface.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/BC_Cell.dir/free_surface.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/free_surface.f90 -o CMakeFiles/BC_Cell.dir/free_surface.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/free_surface.f90 -o CMakeFiles/BC_Cell.dir/free_surface.f90.s
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.o: Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/flags.make
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/cell_boundary_condition.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/cell_boundary_condition.f90 -o CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/cell_boundary_condition.f90 -o CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.o
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/cell_boundary_condition.f90 > CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/cell_boundary_condition.f90 > CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.i
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/cell_boundary_condition.f90 -o CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/cell_boundary_condition.f90 -o CMakeFiles/BC_Cell.dir/cell_boundary_condition.f90.s
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.o: Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/flags.make
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/lagrange_surface_cell.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building Fortran object Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/lagrange_surface_cell.f90 -o CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/lagrange_surface_cell.f90 -o CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.o
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/lagrange_surface_cell.f90 > CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/lagrange_surface_cell.f90 > CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.i
 
 Boundary_conditions/Cell/CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/lagrange_surface_cell.f90 -o CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/Cell/lagrange_surface_cell.f90 -o CMakeFiles/BC_Cell.dir/lagrange_surface_cell.f90.s
 
 # Object files for target BC_Cell
 BC_Cell_OBJECTS = \

@@ -701,8 +701,6 @@ contains
 
         real(8), dimension(:, :, :), pointer :: vol_target            
         real(8), dimension(:, :, :), pointer :: vof_target     
-        CHARACTER(LEN=:), ALLOCATABLE :: my_var_value !for use_gpu
-        INTEGER :: my_var_length, ierror !for use_gpu
         logical :: do_offload
   
   
@@ -722,9 +720,9 @@ contains
                         !call this%Write_to_files()
         ncyc = 1
         if (this%rezone_type == 0) then
-            max_ncyc = 3
+            max_ncyc = 5
         else
-            max_ncyc = 3
+            max_ncyc = 5
         end if
         !write(*,*) this%total_vof%data(1)%values(1:this%nx, 1:this%ny, 1:this%nz) !reem printing of the grid for debug
         if (this%mesh%dimension == 2) then
@@ -752,8 +750,6 @@ contains
             call this%mesh%coordinates%Point_to_data(x_target, y_target, z_target)
             call this%total_vof%       Point_to_data(vof_target)
             call this%total_volume%    Point_to_data(vol_target)
-
-            !CALL GET_ENVIRONMENT_VARIABLE("USE_GPU", my_var_value, my_var_length, ierror)
             
             write(*,*) "Number of Available devices: ", omp_get_num_devices()
             write(*,*) "From datafile: use_GPU=", this%use_GPU

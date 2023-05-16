@@ -32,6 +32,7 @@ module hydro_step_module
     use communication_parameters_module , only : communication_parameters_t
     use communication_module            , only : communication_t
     use boundary_parameters_module      , only : boundary_parameters_t
+    use omp_lib
 
     implicit none
     private
@@ -544,6 +545,7 @@ contains
         dp_drho     = 0d0
         dp_de       = 0d0
 
+        !$omp parallel do num_threads(4) collapse(3) private(tmp_mat)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -559,7 +561,7 @@ contains
                 end do
             end do
         end do
-
+        !$omp end parallel do
 
 
         allocate(dt_de_temp(this%nx, this%ny, this%nz))
@@ -578,7 +580,7 @@ contains
         call this%materials%Apply_eos(this%nx, this%ny, this%nz, this%emf, .true.)
 
 
-
+       !$omp parallel do num_threads(4) collapse(3) private(tmp_mat)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -595,10 +597,12 @@ contains
                 end do
             end do
         end do
+        !$omp end parallel do
 
         call this%total_pressure%Exchange_virtual_space_nonblocking()
         call this%total_density%Apply_boundary(.false.)
 
+        !$omp parallel do num_threads(4) collapse(3)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -609,10 +613,12 @@ contains
                 end do
             end do
         end do
+        !$omp end parallel do
 
         deallocate(dt_de_temp)
 
         call this%total_pressure%Exchange_end()
+        !$omp parallel do num_threads(4) collapse(3)
         do k = 0, this%nzp
             do j = 0, this%nyp
                 do i = 0, this%nxp
@@ -620,7 +626,7 @@ contains
                 end do
             end do
         end do
-
+        !$omp end parallel do
 
 
 
@@ -685,6 +691,8 @@ contains
         call this%materials%vof      %Point_to_data(mat_vof)
         call volume%Point_to_data(vol)
 
+        !$omp parallel num_threads(4)
+        !$omp do collapse(3)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -692,7 +700,8 @@ contains
                 end do
             end do
         end do
-
+        !$omp end do nowait
+        !$omp do collapse(3) private(tmp_mat)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -706,6 +715,8 @@ contains
                 end do
             end do
         end do
+        !$omp end do
+        !$omp end parallel
 !        stop
     end subroutine Calculate_density
 
@@ -812,6 +823,7 @@ contains
         real(8) :: x1, x2, x3, x4, x5, x6  
         real(8) :: y1, y2, y3, y4, y5, y6  
         real(8) :: z1, z2, z3, z4, z5, z6  
+        real(8) :: mid_val
 
 
 
@@ -823,7 +835,10 @@ contains
         call this%inversed_vertex_mass%Point_to_data(inversed_vertex_mass)
 
 
-
+        !$omp parallel do num_threads(4) collapse(3) private(i, ip, im, jp, jm ,kp, km, &
+        !$omp&    x1, x2, x3, x4, x5, x6, &
+        !$omp&     y1, y2, y3, y4, y5, y6, &
+        !$omp&     z1, z2, z3, z4, z5, z6, mid_val)
         do k = 1, this%nzp
             do j = 1, this%nyp
                 do i = 1, this%nxp
@@ -855,7 +870,8 @@ contains
                     z5 = z(i, jm, k)
                     z6 = z(i, j, km)
 
-                    acceleration_x(i, j, k) = -0.25d0 * inversed_vertex_mass(i, j, k) * dt_mid * &
+                    mid_val=-0.25d0 * inversed_vertex_mass(i, j, k) * dt_mid
+                    acceleration_x(i, j, k) = mid_val * &
                         (pressure_sum(i  , j  , k ) * ((y2 - y1) * (z3 - z1) - (z2 - z1) * (y3 - y1)) &
                         +pressure_sum(i  , j  , km) * ((y6 - y1) * (z2 - z1) - (z6 - z1) * (y2 - y1)) &
                         +pressure_sum(im , j  , k ) * ((y3 - y4) * (z2 - z4) - (z3 - z4) * (y2 - y4)) &
@@ -866,7 +882,7 @@ contains
                         +pressure_sum(im , jm , km) * ((y6 - y4) * (z5 - z4) - (z6 - z4) * (y5 - y4)))
 
 
-                    acceleration_y(i, j, k) = -0.25d0 * inversed_vertex_mass(i, j, k) * dt_mid * &
+                    acceleration_y(i, j, k) = mid_val * &
                         (pressure_sum(i  , j , k ) * ((z2 - z1) * (x3 - x1) - (x2 - x1) * (z3 - z1)) &
                         +pressure_sum(i  , j , km) * ((z6 - z1) * (x2 - x1) - (x6 - x1) * (z2 - z1)) &
                         +pressure_sum(im , j , k ) * ((z3 - z4) * (x2 - x4) - (x3 - x4) * (z2 - z4)) &
@@ -876,7 +892,7 @@ contains
                         +pressure_sum(im , jm, k ) * ((z5 - z4) * (x3 - x4) - (x5 - x4) * (z3 - z4)) &
                         +pressure_sum(im , jm, km) * ((z6 - z4) * (x5 - x4) - (x6 - x4) * (z5 - z4)))
 
-                    acceleration_z(i, j, k) = 0.25d0 * inversed_vertex_mass(i, j, k) * dt_mid * &
+                    acceleration_z(i, j, k) = mid_val * &
                         (-pressure_sum(i , j , k ) * ((x2 - x1) * (y3 - y1) - (y2 - y1) * (x3 - x1)) &
                         -pressure_sum(i , j , km) * ((x6 - x1) * (y2 - y1) - (y6 - y1) * (x2 - x1)) &
                         -pressure_sum(im, j , k ) * ((x3 - x4) * (y2 - y4) - (y3 - y4) * (x2 - x4)) &
@@ -891,6 +907,7 @@ contains
                 end do
             end do
         end do
+        !$omp end parallel do
 
 
 
@@ -1137,6 +1154,11 @@ contains
         integer :: i, j, k  
         integer :: ip, jp, kp
         integer :: mesh_type
+        integer:: current_thread
+        real(8), dimension(8, 12) :: dt_cour_arr ! padded to avoid false sharing      
+        integer, dimension(16, 12) :: cour_idx_arr ! padded to avoid false sharing
+        !dir$ attributes align: 64 :: dt_cour_arr
+        !dir$ attributes align: 64 :: cour_idx_arr
 
         call this%a_visc%Update_visc_factors()
         linear_visc_fac => this%a_visc%xl_visc_mat
@@ -1173,7 +1195,18 @@ contains
 
         time%dt_cour = 1d20
         call this%acceleration%Exchange_end()
-
+        dt_cour_arr(1, :) = time%dt_cour
+        !$omp parallel num_threads(4) private(current_thread)
+        current_thread = omp_get_thread_num()
+        !$omp do collapse(3) private(ip, jp, kp, &
+        !$omp&   avg_acc_x, avg_acc_y, avg_acc_z, tot_acc, &
+        !$omp&    r1, r2, r3, r4, r5, r6, r7, r8, &
+        !$omp&    eff_length, eff_vel_div, &
+        !$omp&    x1, x2, x3, x4, x5, x6, x7, x8, &
+        !$omp&    y1, y2, y3, y4, y5, y6, y7, y8, &
+        !$omp&    z1, z2, z3, z4, z5, z6, z7, z8, &
+        !$omp&    x_avg, y_avg, z_avg, &
+        !$omp&    quad_visc_fac_temp, dt_cour_temp)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -1276,17 +1309,26 @@ contains
 
                         a_visc(i, j, k) = min(0d0, eff_vel_div) * a_visc(i, j, k)
                         dt_cour_temp = eff_length * eff_length / sound_vel(i ,j, k)
-
-                        if (dt_cour_temp < time%dt_cour) then
-                            time%dt_cour = dt_cour_temp
-                            time%i_cour = i
-                            time%j_cour = j
-                            time%k_cour = k
+                        ! if (dt_cour_temp < time%dt_cour) then
+                        !     time%dt_cour = dt_cour_temp
+                        !     time%i_cour = i
+                        !     time%j_cour = j
+                        !     time%k_cour = k
+                        ! end if
+                            
+                        ! current_thread + 1 because it's zero-based
+                        if (dt_cour_temp < dt_cour_arr(1, current_thread + 1)) then
+                            dt_cour_arr(1, current_thread + 1) = dt_cour_temp
+                            cour_idx_arr(1, current_thread + 1) = i
+                            cour_idx_arr(2, current_thread + 1) = j
+                            cour_idx_arr(3, current_thread + 1) = k
                         end if
                     end if
                 end do
             end do
         end do
+        !$omp end do
+        !$omp end parallel
 
         call this%a_visc%Exchange_virtual_space_nonblocking()
         time%dt_cour = sqrt(time%dt_cour) / time%dt_cour_fac
@@ -1405,6 +1447,10 @@ contains
         call this%a_visc         %Point_to_data(a_visc)
 
         call this%a_visc%Exchange_end()
+        !$omp parallel do num_threads(4) collapse(3) private(ip, im, jp, jm, kp, km, &
+                !$omp& x1, x2, x3, x4, x5, x6, &
+                !$omp& y1, y2, y3, y4, y5, y6, &
+                !$omp& z1, z2, z3, z4, z5, z6)
         do k = 1, this%nzp
             do j = 1, this%nyp
                 do i = 1, this%nxp
@@ -1477,6 +1523,7 @@ contains
                 end do
             end do
         end do
+        !$omp end parallel do
 
         if (this%mesh%mesh_type /= 2) then
             call this%velocity%Impose_spherical_symmetry(this%mesh%coordinates)
@@ -1808,6 +1855,8 @@ contains
         call this%materials%sie        %Point_to_data(sie_vof)
         call this%materials%vof        %Point_to_data(mat_vof)
 
+        !$omp parallel do num_threads(4) collapse(3) schedule(static) private(tmp_mat, vol_diff, vol_diff_stress, a_visc_temp, &
+        !$omp& sie_vof_temp, pressure_temp, dp_de_temp, dp_drho_temp, mass_vof_temp, vol_diff_vof_temp, vol_vof_temp, vol_diff_vof_stress_temp, sie_diff)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
@@ -1867,7 +1916,7 @@ contains
                 end do
             end do
         end do
-
+        !$omp end parallel do
         call this%total_sie%Exchange_virtual_space_nonblocking()
 
         call this%materials%sie%Exchange_virtual_space_nonblocking()

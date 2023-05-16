@@ -72,41 +72,41 @@ include Mesh/CMakeFiles/Mesh.dir/flags.make
 Mesh/CMakeFiles/Mesh.dir/mesh_base.f90.o: Mesh/CMakeFiles/Mesh.dir/flags.make
 Mesh/CMakeFiles/Mesh.dir/mesh_base.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_base.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object Mesh/CMakeFiles/Mesh.dir/mesh_base.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_base.f90 -o CMakeFiles/Mesh.dir/mesh_base.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_base.f90 -o CMakeFiles/Mesh.dir/mesh_base.f90.o
 
 Mesh/CMakeFiles/Mesh.dir/mesh_base.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Mesh.dir/mesh_base.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_base.f90 > CMakeFiles/Mesh.dir/mesh_base.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_base.f90 > CMakeFiles/Mesh.dir/mesh_base.f90.i
 
 Mesh/CMakeFiles/Mesh.dir/mesh_base.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Mesh.dir/mesh_base.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_base.f90 -o CMakeFiles/Mesh.dir/mesh_base.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_base.f90 -o CMakeFiles/Mesh.dir/mesh_base.f90.s
 
 Mesh/CMakeFiles/Mesh.dir/mesh.f90.o: Mesh/CMakeFiles/Mesh.dir/flags.make
 Mesh/CMakeFiles/Mesh.dir/mesh.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object Mesh/CMakeFiles/Mesh.dir/mesh.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh.f90 -o CMakeFiles/Mesh.dir/mesh.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh.f90 -o CMakeFiles/Mesh.dir/mesh.f90.o
 
 Mesh/CMakeFiles/Mesh.dir/mesh.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Mesh.dir/mesh.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh.f90 > CMakeFiles/Mesh.dir/mesh.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh.f90 > CMakeFiles/Mesh.dir/mesh.f90.i
 
 Mesh/CMakeFiles/Mesh.dir/mesh.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Mesh.dir/mesh.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh.f90 -o CMakeFiles/Mesh.dir/mesh.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh.f90 -o CMakeFiles/Mesh.dir/mesh.f90.s
 
 Mesh/CMakeFiles/Mesh.dir/mesh_3d.f90.o: Mesh/CMakeFiles/Mesh.dir/flags.make
 Mesh/CMakeFiles/Mesh.dir/mesh_3d.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_3d.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object Mesh/CMakeFiles/Mesh.dir/mesh_3d.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_3d.f90 -o CMakeFiles/Mesh.dir/mesh_3d.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_3d.f90 -o CMakeFiles/Mesh.dir/mesh_3d.f90.o
 
 Mesh/CMakeFiles/Mesh.dir/mesh_3d.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Mesh.dir/mesh_3d.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_3d.f90 > CMakeFiles/Mesh.dir/mesh_3d.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_3d.f90 > CMakeFiles/Mesh.dir/mesh_3d.f90.i
 
 Mesh/CMakeFiles/Mesh.dir/mesh_3d.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Mesh.dir/mesh_3d.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_3d.f90 -o CMakeFiles/Mesh.dir/mesh_3d.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Mesh && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Mesh/mesh_3d.f90 -o CMakeFiles/Mesh.dir/mesh_3d.f90.s
 
 # Object files for target Mesh
 Mesh_OBJECTS = \

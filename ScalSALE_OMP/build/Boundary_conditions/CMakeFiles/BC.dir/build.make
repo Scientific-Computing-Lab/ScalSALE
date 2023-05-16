@@ -72,15 +72,15 @@ include Boundary_conditions/CMakeFiles/BC.dir/flags.make
 Boundary_conditions/CMakeFiles/BC.dir/boundary_parameters.f90.o: Boundary_conditions/CMakeFiles/BC.dir/flags.make
 Boundary_conditions/CMakeFiles/BC.dir/boundary_parameters.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/boundary_parameters.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object Boundary_conditions/CMakeFiles/BC.dir/boundary_parameters.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/boundary_parameters.f90 -o CMakeFiles/BC.dir/boundary_parameters.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/boundary_parameters.f90 -o CMakeFiles/BC.dir/boundary_parameters.f90.o
 
 Boundary_conditions/CMakeFiles/BC.dir/boundary_parameters.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/BC.dir/boundary_parameters.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/boundary_parameters.f90 > CMakeFiles/BC.dir/boundary_parameters.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/boundary_parameters.f90 > CMakeFiles/BC.dir/boundary_parameters.f90.i
 
 Boundary_conditions/CMakeFiles/BC.dir/boundary_parameters.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/BC.dir/boundary_parameters.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/boundary_parameters.f90 -o CMakeFiles/BC.dir/boundary_parameters.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Boundary_conditions && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Boundary_conditions/boundary_parameters.f90 -o CMakeFiles/BC.dir/boundary_parameters.f90.s
 
 # Object files for target BC
 BC_OBJECTS = \

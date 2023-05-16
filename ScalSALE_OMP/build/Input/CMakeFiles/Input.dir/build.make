@@ -72,41 +72,41 @@ include Input/CMakeFiles/Input.dir/flags.make
 Input/CMakeFiles/Input.dir/replace_words.f90.o: Input/CMakeFiles/Input.dir/flags.make
 Input/CMakeFiles/Input.dir/replace_words.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/replace_words.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object Input/CMakeFiles/Input.dir/replace_words.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/replace_words.f90 -o CMakeFiles/Input.dir/replace_words.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/replace_words.f90 -o CMakeFiles/Input.dir/replace_words.f90.o
 
 Input/CMakeFiles/Input.dir/replace_words.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Input.dir/replace_words.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/replace_words.f90 > CMakeFiles/Input.dir/replace_words.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/replace_words.f90 > CMakeFiles/Input.dir/replace_words.f90.i
 
 Input/CMakeFiles/Input.dir/replace_words.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Input.dir/replace_words.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/replace_words.f90 -o CMakeFiles/Input.dir/replace_words.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/replace_words.f90 -o CMakeFiles/Input.dir/replace_words.f90.s
 
 Input/CMakeFiles/Input.dir/defaults.f90.o: Input/CMakeFiles/Input.dir/flags.make
 Input/CMakeFiles/Input.dir/defaults.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/defaults.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object Input/CMakeFiles/Input.dir/defaults.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/defaults.f90 -o CMakeFiles/Input.dir/defaults.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/defaults.f90 -o CMakeFiles/Input.dir/defaults.f90.o
 
 Input/CMakeFiles/Input.dir/defaults.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Input.dir/defaults.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/defaults.f90 > CMakeFiles/Input.dir/defaults.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/defaults.f90 > CMakeFiles/Input.dir/defaults.f90.i
 
 Input/CMakeFiles/Input.dir/defaults.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Input.dir/defaults.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/defaults.f90 -o CMakeFiles/Input.dir/defaults.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/defaults.f90 -o CMakeFiles/Input.dir/defaults.f90.s
 
 Input/CMakeFiles/Input.dir/datafile_object.f90.o: Input/CMakeFiles/Input.dir/flags.make
 Input/CMakeFiles/Input.dir/datafile_object.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/datafile_object.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object Input/CMakeFiles/Input.dir/datafile_object.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/datafile_object.f90 -o CMakeFiles/Input.dir/datafile_object.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/datafile_object.f90 -o CMakeFiles/Input.dir/datafile_object.f90.o
 
 Input/CMakeFiles/Input.dir/datafile_object.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Input.dir/datafile_object.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/datafile_object.f90 > CMakeFiles/Input.dir/datafile_object.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/datafile_object.f90 > CMakeFiles/Input.dir/datafile_object.f90.i
 
 Input/CMakeFiles/Input.dir/datafile_object.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Input.dir/datafile_object.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/datafile_object.f90 -o CMakeFiles/Input.dir/datafile_object.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Input && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Input/datafile_object.f90 -o CMakeFiles/Input.dir/datafile_object.f90.s
 
 # Object files for target Input
 Input_OBJECTS = \

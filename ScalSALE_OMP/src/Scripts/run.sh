@@ -20,6 +20,6 @@ else
 #	mpirun -n 1 -mca btl self,sm,openib ../exec/main
     #mpirun -n 1 -mca btl self,sm,openib ../exec/main
     #mpirun -n 8 ../exec/main
-     mpirun -n $1 --map-by node:PE=32 --report-bindings ../exec/main
+     mpirun -n $1 --map-by node:PE=64 --report-bindings ../exec/main
 #--map-by numa:PE=16
 fi

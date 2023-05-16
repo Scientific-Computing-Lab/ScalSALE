@@ -137,17 +137,17 @@
     	"number_layers_j": 2,
         "number_cells_j": [
             1,
-            300
+            480
         ], 
         "number_layers_i": 2, 
         "number_cells_i": [
             1,
-            300
+            480
         ],
         "number_layers_k":2,
         "number_cells_k": [
             1,
-            300
+            480
         ],
         "materials": [
             "Air", 

@@ -8,6 +8,7 @@ module vertex_mass_module
    use coordinates_module                  , only : coordinates_t
    use parallel_parameters_module, only : parallel_parameters_t
    use boundary_parameters_module      , only : boundary_parameters_t
+   use omp_lib
 
    implicit none
    private
@@ -161,6 +162,7 @@ contains
       integer :: k1, k2, k3  
       logical :: wall_x_top, wall_x_bot, wall_y_top, wall_y_bot, wall_z_top, wall_z_bot
       integer :: nxp,nyp,nzp
+      real(8) :: start_time
 
       nxp = this%d1
       nyp = this%d2
@@ -182,8 +184,10 @@ contains
       call c_mass     %Point_to_data(cell_mass)
       call tot_density%Point_to_data(density)
       call coordinates%Point_to_data(x, y, z)
-
+        
          vertex_mass(1:nxp, 1:nyp , 1:nzp) = 0d0
+         start_time=omp_get_wtime()
+         !$omp parallel do num_threads(4) collapse(3) private(t, kk, jj, ii, i1, i2, i3, j1, j2, j3, k1, k2, k3)
          do k = 1, nzp
             do j = 1, nyp
                do i = 1, nxp
@@ -222,7 +226,8 @@ contains
                end do
             end do
          end do
-
+         !$omp end parallel do
+         write(*,*) "Calculate_vertex_mass_3d time: ", omp_get_wtime() - start_time
 
 
 

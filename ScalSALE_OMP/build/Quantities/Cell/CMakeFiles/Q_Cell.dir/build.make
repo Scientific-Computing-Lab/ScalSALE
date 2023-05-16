@@ -72,171 +72,171 @@ include Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/artificial_viscosity.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/artificial_viscosity.f90 -o CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/artificial_viscosity.f90 -o CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/artificial_viscosity.f90 > CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/artificial_viscosity.f90 > CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/artificial_viscosity.f90 -o CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/artificial_viscosity.f90 -o CMakeFiles/Q_Cell.dir/artificial_viscosity.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_mass.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_mass.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_mass.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_mass.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_mass.f90 -o CMakeFiles/Q_Cell.dir/cell_mass.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_mass.f90 -o CMakeFiles/Q_Cell.dir/cell_mass.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_mass.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/cell_mass.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_mass.f90 > CMakeFiles/Q_Cell.dir/cell_mass.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_mass.f90 > CMakeFiles/Q_Cell.dir/cell_mass.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_mass.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/cell_mass.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_mass.f90 -o CMakeFiles/Q_Cell.dir/cell_mass.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_mass.f90 -o CMakeFiles/Q_Cell.dir/cell_mass.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_quantity.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_quantity.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_quantity.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_quantity.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_quantity.f90 -o CMakeFiles/Q_Cell.dir/cell_quantity.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_quantity.f90 -o CMakeFiles/Q_Cell.dir/cell_quantity.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_quantity.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/cell_quantity.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_quantity.f90 > CMakeFiles/Q_Cell.dir/cell_quantity.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_quantity.f90 > CMakeFiles/Q_Cell.dir/cell_quantity.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/cell_quantity.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/cell_quantity.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_quantity.f90 -o CMakeFiles/Q_Cell.dir/cell_quantity.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/cell_quantity.f90 -o CMakeFiles/Q_Cell.dir/cell_quantity.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/material_quantity.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/material_quantity.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/material_quantity.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/material_quantity.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/material_quantity.f90 -o CMakeFiles/Q_Cell.dir/material_quantity.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/material_quantity.f90 -o CMakeFiles/Q_Cell.dir/material_quantity.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/material_quantity.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/material_quantity.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/material_quantity.f90 > CMakeFiles/Q_Cell.dir/material_quantity.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/material_quantity.f90 > CMakeFiles/Q_Cell.dir/material_quantity.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/material_quantity.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/material_quantity.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/material_quantity.f90 -o CMakeFiles/Q_Cell.dir/material_quantity.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/material_quantity.f90 -o CMakeFiles/Q_Cell.dir/material_quantity.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/density.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/density.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/density.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/density.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/density.f90 -o CMakeFiles/Q_Cell.dir/density.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/density.f90 -o CMakeFiles/Q_Cell.dir/density.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/density.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/density.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/density.f90 > CMakeFiles/Q_Cell.dir/density.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/density.f90 > CMakeFiles/Q_Cell.dir/density.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/density.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/density.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/density.f90 -o CMakeFiles/Q_Cell.dir/density.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/density.f90 -o CMakeFiles/Q_Cell.dir/density.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/energy.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/energy.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/energy.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/energy.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/energy.f90 -o CMakeFiles/Q_Cell.dir/energy.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/energy.f90 -o CMakeFiles/Q_Cell.dir/energy.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/energy.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/energy.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/energy.f90 > CMakeFiles/Q_Cell.dir/energy.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/energy.f90 > CMakeFiles/Q_Cell.dir/energy.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/energy.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/energy.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/energy.f90 -o CMakeFiles/Q_Cell.dir/energy.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/energy.f90 -o CMakeFiles/Q_Cell.dir/energy.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/pressure.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/pressure.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/pressure.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/pressure.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/pressure.f90 -o CMakeFiles/Q_Cell.dir/pressure.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/pressure.f90 -o CMakeFiles/Q_Cell.dir/pressure.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/pressure.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/pressure.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/pressure.f90 > CMakeFiles/Q_Cell.dir/pressure.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/pressure.f90 > CMakeFiles/Q_Cell.dir/pressure.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/pressure.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/pressure.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/pressure.f90 -o CMakeFiles/Q_Cell.dir/pressure.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/pressure.f90 -o CMakeFiles/Q_Cell.dir/pressure.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/sound_velocity.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/sound_velocity.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/sound_velocity.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/sound_velocity.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/sound_velocity.f90 -o CMakeFiles/Q_Cell.dir/sound_velocity.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/sound_velocity.f90 -o CMakeFiles/Q_Cell.dir/sound_velocity.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/sound_velocity.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/sound_velocity.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/sound_velocity.f90 > CMakeFiles/Q_Cell.dir/sound_velocity.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/sound_velocity.f90 > CMakeFiles/Q_Cell.dir/sound_velocity.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/sound_velocity.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/sound_velocity.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/sound_velocity.f90 -o CMakeFiles/Q_Cell.dir/sound_velocity.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/sound_velocity.f90 -o CMakeFiles/Q_Cell.dir/sound_velocity.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/temperature.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/temperature.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/temperature.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/temperature.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/temperature.f90 -o CMakeFiles/Q_Cell.dir/temperature.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/temperature.f90 -o CMakeFiles/Q_Cell.dir/temperature.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/temperature.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/temperature.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/temperature.f90 > CMakeFiles/Q_Cell.dir/temperature.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/temperature.f90 > CMakeFiles/Q_Cell.dir/temperature.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/temperature.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/temperature.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/temperature.f90 -o CMakeFiles/Q_Cell.dir/temperature.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/temperature.f90 -o CMakeFiles/Q_Cell.dir/temperature.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/volume.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/volume.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/volume.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/volume.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/volume.f90 -o CMakeFiles/Q_Cell.dir/volume.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/volume.f90 -o CMakeFiles/Q_Cell.dir/volume.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/volume.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/volume.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/volume.f90 > CMakeFiles/Q_Cell.dir/volume.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/volume.f90 > CMakeFiles/Q_Cell.dir/volume.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/volume.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/volume.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/volume.f90 -o CMakeFiles/Q_Cell.dir/volume.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/volume.f90 -o CMakeFiles/Q_Cell.dir/volume.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/vof.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/vof.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/vof.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/vof.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/vof.f90 -o CMakeFiles/Q_Cell.dir/vof.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/vof.f90 -o CMakeFiles/Q_Cell.dir/vof.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/vof.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/vof.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/vof.f90 > CMakeFiles/Q_Cell.dir/vof.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/vof.f90 > CMakeFiles/Q_Cell.dir/vof.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/vof.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/vof.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/vof.f90 -o CMakeFiles/Q_Cell.dir/vof.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/vof.f90 -o CMakeFiles/Q_Cell.dir/vof.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/materials_in_cells.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/materials_in_cells.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/materials_in_cells.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/materials_in_cells.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/materials_in_cells.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/materials_in_cells.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/materials_in_cells.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/materials_in_cells.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/materials_in_cells.f90 > CMakeFiles/Q_Cell.dir/materials_in_cells.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/materials_in_cells.f90 > CMakeFiles/Q_Cell.dir/materials_in_cells.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/materials_in_cells.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/materials_in_cells.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/materials_in_cells.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/materials_in_cells.f90.s
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.o: Quantities/Cell/CMakeFiles/Q_Cell.dir/flags.make
 Quantities/Cell/CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/num_materials_in_cells.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building Fortran object Quantities/Cell/CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/num_materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/num_materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.o
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/num_materials_in_cells.f90 > CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/num_materials_in_cells.f90 > CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.i
 
 Quantities/Cell/CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/num_materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Quantities/Cell && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Quantities/Cell/num_materials_in_cells.f90 -o CMakeFiles/Q_Cell.dir/num_materials_in_cells.f90.s
 
 # Object files for target Q_Cell
 Q_Cell_OBJECTS = \

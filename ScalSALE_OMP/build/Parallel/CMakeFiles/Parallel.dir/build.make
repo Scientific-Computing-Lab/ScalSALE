@@ -72,54 +72,54 @@ include Parallel/CMakeFiles/Parallel.dir/flags.make
 Parallel/CMakeFiles/Parallel.dir/communication.f90.o: Parallel/CMakeFiles/Parallel.dir/flags.make
 Parallel/CMakeFiles/Parallel.dir/communication.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object Parallel/CMakeFiles/Parallel.dir/communication.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication.f90 -o CMakeFiles/Parallel.dir/communication.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication.f90 -o CMakeFiles/Parallel.dir/communication.f90.o
 
 Parallel/CMakeFiles/Parallel.dir/communication.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Parallel.dir/communication.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication.f90 > CMakeFiles/Parallel.dir/communication.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication.f90 > CMakeFiles/Parallel.dir/communication.f90.i
 
 Parallel/CMakeFiles/Parallel.dir/communication.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Parallel.dir/communication.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication.f90 -o CMakeFiles/Parallel.dir/communication.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication.f90 -o CMakeFiles/Parallel.dir/communication.f90.s
 
 Parallel/CMakeFiles/Parallel.dir/communication_parameters.f90.o: Parallel/CMakeFiles/Parallel.dir/flags.make
 Parallel/CMakeFiles/Parallel.dir/communication_parameters.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_parameters.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object Parallel/CMakeFiles/Parallel.dir/communication_parameters.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_parameters.f90 -o CMakeFiles/Parallel.dir/communication_parameters.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_parameters.f90 -o CMakeFiles/Parallel.dir/communication_parameters.f90.o
 
 Parallel/CMakeFiles/Parallel.dir/communication_parameters.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Parallel.dir/communication_parameters.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_parameters.f90 > CMakeFiles/Parallel.dir/communication_parameters.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_parameters.f90 > CMakeFiles/Parallel.dir/communication_parameters.f90.i
 
 Parallel/CMakeFiles/Parallel.dir/communication_parameters.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Parallel.dir/communication_parameters.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_parameters.f90 -o CMakeFiles/Parallel.dir/communication_parameters.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_parameters.f90 -o CMakeFiles/Parallel.dir/communication_parameters.f90.s
 
 Parallel/CMakeFiles/Parallel.dir/parallel_parameters.f90.o: Parallel/CMakeFiles/Parallel.dir/flags.make
 Parallel/CMakeFiles/Parallel.dir/parallel_parameters.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/parallel_parameters.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object Parallel/CMakeFiles/Parallel.dir/parallel_parameters.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/parallel_parameters.f90 -o CMakeFiles/Parallel.dir/parallel_parameters.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/parallel_parameters.f90 -o CMakeFiles/Parallel.dir/parallel_parameters.f90.o
 
 Parallel/CMakeFiles/Parallel.dir/parallel_parameters.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Parallel.dir/parallel_parameters.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/parallel_parameters.f90 > CMakeFiles/Parallel.dir/parallel_parameters.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/parallel_parameters.f90 > CMakeFiles/Parallel.dir/parallel_parameters.f90.i
 
 Parallel/CMakeFiles/Parallel.dir/parallel_parameters.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Parallel.dir/parallel_parameters.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/parallel_parameters.f90 -o CMakeFiles/Parallel.dir/parallel_parameters.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/parallel_parameters.f90 -o CMakeFiles/Parallel.dir/parallel_parameters.f90.s
 
 Parallel/CMakeFiles/Parallel.dir/communication_utils.f90.o: Parallel/CMakeFiles/Parallel.dir/flags.make
 Parallel/CMakeFiles/Parallel.dir/communication_utils.f90.o: /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_utils.f90
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yonif/ScalSALE/ScalSALE_OMP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object Parallel/CMakeFiles/Parallel.dir/communication_utils.f90.o"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_utils.f90 -o CMakeFiles/Parallel.dir/communication_utils.f90.o
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_utils.f90 -o CMakeFiles/Parallel.dir/communication_utils.f90.o
 
 Parallel/CMakeFiles/Parallel.dir/communication_utils.f90.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/Parallel.dir/communication_utils.f90.i"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_utils.f90 > CMakeFiles/Parallel.dir/communication_utils.f90.i
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_utils.f90 > CMakeFiles/Parallel.dir/communication_utils.f90.i
 
 Parallel/CMakeFiles/Parallel.dir/communication_utils.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/Parallel.dir/communication_utils.f90.s"
-	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_utils.f90 -o CMakeFiles/Parallel.dir/communication_utils.f90.s
+	cd /home/yonif/ScalSALE/ScalSALE_OMP/build/Parallel && /opt/sw/openmpi/2.1.0/bin/mpif90 $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /home/yonif/ScalSALE/ScalSALE_OMP/src/Parallel/communication_utils.f90 -o CMakeFiles/Parallel.dir/communication_utils.f90.s
 
 # Object files for target Parallel
 Parallel_OBJECTS = \

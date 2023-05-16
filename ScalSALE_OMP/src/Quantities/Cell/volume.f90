@@ -3,6 +3,7 @@ module volume_module
    use cell_quantity_module, only : cell_quantity_t
    use cell_boundary_condition_module, only : cell_boundary_condition_t, cell_bc_wrapper_t
    use boundary_parameters_module      , only : boundary_parameters_t
+   use omp_lib
 
    implicit none
    private
@@ -75,6 +76,7 @@ contains
       real(8) :: cyl
       integer :: sw_vertex_mass
       integer                                         :: dimension
+      real(8) :: start_time
 
 
 
@@ -116,6 +118,11 @@ contains
 
      is_neg = 0
      nz = this%d3
+     start_time=omp_get_wtime()
+         !$omp parallel do num_threads(4) collapse(3) schedule(static) private(i, ip, jp, kp, &
+               !$omp& x1, x2, x3, x4, x5, x6, x7, x8, &
+               !$omp& y1, y2, y3, y4, y5, y6, y7, y8, &
+               !$omp& z1, z2, z3, z4, z5, z6, z7, z8)
          do k = 1, nz
             do j = 1, ny
                do i = 1, nx
@@ -163,6 +170,8 @@ contains
                end do
             end do
          end do
+         !$omp end parallel do
+         write(*,*) "Calculate cell volume time: ", omp_get_wtime() - start_time
 
 
 

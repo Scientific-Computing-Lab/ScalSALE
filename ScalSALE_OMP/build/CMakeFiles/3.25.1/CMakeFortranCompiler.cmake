@@ -1,4 +1,4 @@
-set(CMAKE_Fortran_COMPILER "/opt/sw/openmpi/v4/4.1.3/gnu/bin/mpif90")
+set(CMAKE_Fortran_COMPILER "/opt/sw/openmpi/2.1.0/bin/mpif90")
 set(CMAKE_Fortran_COMPILER_ARG1 "")
 set(CMAKE_Fortran_COMPILER_ID "GNU")
 set(CMAKE_Fortran_COMPILER_VERSION "9.1.0")
@@ -55,7 +55,7 @@ endif()
 
 
 
-set(CMAKE_Fortran_IMPLICIT_INCLUDE_DIRECTORIES "/opt/sw/openmpi/v4/4.1.3/gnu/include;/opt/sw/openmpi/v4/4.1.3/gnu/lib;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include;/usr/local/include;/opt/sw/gcc/9.1.0/include;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed;/usr/include")
+set(CMAKE_Fortran_IMPLICIT_INCLUDE_DIRECTORIES "/opt/sw/openmpi/2.1.0/include;/opt/sw/openmpi/2.1.0/lib;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/finclude;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include;/usr/local/include;/opt/sw/gcc/9.1.0/include;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed;/usr/include")
 set(CMAKE_Fortran_IMPLICIT_LINK_LIBRARIES "mpi_usempif08;mpi_usempi_ignore_tkr;mpi_mpifh;mpi;gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;pthread;c;gcc_s;gcc")
-set(CMAKE_Fortran_IMPLICIT_LINK_DIRECTORIES "/opt/sw/openmpi/v4/4.1.3/gnu/lib;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0;/opt/sw/gcc/9.1.0/lib64;/lib64;/usr/lib64;/opt/sw/gcc/9.1.0/lib")
+set(CMAKE_Fortran_IMPLICIT_LINK_DIRECTORIES "/opt/sw/openmpi/2.1.0/lib;/opt/sw/gcc/9.1.0/lib/gcc/x86_64-pc-linux-gnu/9.1.0;/opt/sw/gcc/9.1.0/lib64;/lib64;/usr/lib64;/opt/sw/gcc/9.1.0/lib")
 set(CMAKE_Fortran_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
