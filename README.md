@@ -1,4 +1,4 @@
-# ScalSALE: Scalable SALE Benchmark Framework for Supercomputers
+# ScalSALE: Scalable MPI+X SALE Fortran Benchmark Framework for Supercomputers
 <p align="center">
 <img src="https://github.com/Scientific-Computing-Lab-NRCN/ScalSALE/blob/main/Images/scalesale.jpeg" width="300" height="300">
 </p>
